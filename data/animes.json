@@ -1,98 +1,98 @@
 [
-  {
+    {
+      "titulo": "Jujutsu Kaisen",
+      "descripcion": "Anime cargado de acción sobrenatural, hechicería y batallas impresionantes.",
+      "imagen": "../img/jujutsu-kaisen.jpg",
+      "generos": ["acción"],
+      "estado": "emision",
+      "destacado": true
+    },
+    {
+      "titulo": "Horimiya",
+      "descripcion": "Una comedia romántica fresca y emotiva con personajes entrañables.",
+      "imagen": "../img/horimiya.jpg",
+      "generos": ["comedia", "romance"],
+      "estado": "emitido",
+      "destacado": false
+    },
+    {
+      "titulo": "Solo Leveling",
+      "descripcion": "Sung Jin-Woo, el cazador más débil, despierta un poder que podría cambiar el mundo.",
+      "imagen": "../img/solo-leveling.jpg",
+      "generos": ["acción", "fantasía"],
+      "estado": "emision",
+      "destacado": true
+    },
+    {
+      "titulo": "Frieren: Más allá del final del viaje",
+      "descripcion": "Una historia melancólica y mágica sobre el valor del tiempo y la amistad.",
+      "imagen": "../img/frieren.jpg",
+      "generos": ["fantasía", "drama"],
+      "estado": "emitido",
+      "destacado": true
+    },
+    {
+      "titulo": "Fullmetal Alchemist: Brotherhood",
+      "descripcion": "Los hermanos Elric luchan por recuperar lo que perdieron tras un intento fallido de alquimia prohibida.",
+      "imagen": "../img/fullmetal.jpg",
+      "generos": ["acción", "drama", "fantasía"],
+      "estado": "emitido",
+      "destacado": false
+    },
+    {
+      "titulo": "Steins;Gate",
+      "descripcion": "Un grupo de jóvenes descubre cómo enviar mensajes al pasado y desencadena consecuencias inesperadas.",
+      "imagen": "../img/steins-gate.jpg",
+      "generos": ["drama", "ciencia ficción"],
+      "estado": "emitido",
+      "destacado": false
+    },
+    {
+      "titulo": "Your Name",
+      "descripcion": "Dos adolescentes descubren que están conectados misteriosamente a través del tiempo y el espacio.",
+      "imagen": "../img/your-name.jpg",
+      "generos": ["drama", "romance", "fantasía"],
+      "estado": "emitido",
+      "destacado": false
+    },
+    {
+      "titulo": "A Silent Voice",
+      "descripcion": "Una historia emocional sobre el bullying, la redención y la discapacidad auditiva.",
+      "imagen": "../img/a-silent-voice.jpg",
+      "generos": ["drama", "romance"],
+      "estado": "emitido",
+      "destacado": false
+    },  
+    {
     "titulo": "Demon Slayer",
     "descripcion": "Tanjiro y Nezuko luchan contra demonios mientras buscan una cura para su hermana.",
     "imagen": "../img/kimetsu.jpg",
     "generos": ["acción", "fantasía"],
     "estado": "emision",
     "destacado": true
-  },
-  {
+    },
+    {
     "titulo": "Kaguya-sama: Love is War",
     "descripcion": "Dos genios enamorados compiten por no confesar sus sentimientos primero.",
     "imagen": "../img/kaguya.jpg",
     "generos": ["romance", "comedia"],
     "estado": "emitido",
     "destacado": true
-  },
-  {
+    },
+    {
     "titulo": "Made in Abyss",
     "descripcion": "Una aventura profunda y peligrosa hacia lo desconocido en el abismo.",
     "imagen": "../img/made-in-abyss.jpg",
     "generos": ["aventura", "fantasía", "drama"],
     "estado": "emitido",
     "destacado": false
-  },
-  {
+    },
+    {
     "titulo": "Re:Zero",
     "descripcion": "Subaru es transportado a un mundo de fantasía donde revivir tras la muerte es su poder.",
     "imagen": "../img/rezero.jpg",
     "generos": ["acción", "fantasía", "drama"],
     "estado": "emitido",
     "destacado": false
-  },
-  {
-    "titulo": "Demon Slayer",
-    "descripcion": "Tanjiro y Nezuko luchan contra demonios mientras buscan una cura para su hermana.",
-    "imagen": "../img/kimetsu.jpg",
-    "generos": ["acción", "fantasía"],
-    "estado": "emision",
-    "destacado": true
-  },
-  {
-    "titulo": "Kaguya-sama: Love is War",
-    "descripcion": "Dos genios enamorados compiten por no confesar sus sentimientos primero.",
-    "imagen": "../img/kaguya.jpg",
-    "generos": ["romance", "comedia"],
-    "estado": "emitido",
-    "destacado": true
-  },
-  {
-    "titulo": "Made in Abyss",
-    "descripcion": "Una aventura profunda y peligrosa hacia lo desconocido en el abismo.",
-    "imagen": "../img/made-in-abyss.jpg",
-    "generos": ["aventura", "fantasía", "drama"],
-    "estado": "emitido",
-    "destacado": false
-  },
-  {
-    "titulo": "Re:Zero",
-    "descripcion": "Subaru es transportado a un mundo de fantasía donde revivir tras la muerte es su poder.",
-    "imagen": "../img/rezero.jpg",
-    "generos": ["acción", "fantasía", "drama"],
-    "estado": "emitido",
-    "destacado": false
-  },
-  {
-    "titulo": "Demon Slayer",
-    "descripcion": "Tanjiro y Nezuko luchan contra demonios mientras buscan una cura para su hermana.",
-    "imagen": "../img/kimetsu.jpg",
-    "generos": ["acción", "fantasía"],
-    "estado": "emision",
-    "destacado": true
-  },
-  {
-    "titulo": "Kaguya-sama: Love is War",
-    "descripcion": "Dos genios enamorados compiten por no confesar sus sentimientos primero.",
-    "imagen": "../img/kaguya.jpg",
-    "generos": ["romance", "comedia"],
-    "estado": "emitido",
-    "destacado": true
-  },
-  {
-    "titulo": "Made in Abyss",
-    "descripcion": "Una aventura profunda y peligrosa hacia lo desconocido en el abismo.",
-    "imagen": "../img/made-in-abyss.jpg",
-    "generos": ["aventura", "fantasía", "drama"],
-    "estado": "emitido",
-    "destacado": false
-  },
-  {
-    "titulo": "Re:Zero",
-    "descripcion": "Subaru es transportado a un mundo de fantasía donde revivir tras la muerte es su poder.",
-    "imagen": "../img/rezero.jpg",
-    "generos": ["acción", "fantasía", "drama"],
-    "estado": "emitido",
-    "destacado": false
-  }
+    }
 ]
