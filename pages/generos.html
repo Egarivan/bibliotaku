@@ -1,27 +1,34 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bibliotaku - Biblioteca de Anime</title>
+  <title>Filtrar por género | Bibliotaku</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <header>
-    <h1>📚 Bibliotaku</h1>
-    <p>Explora los animes según tus géneros favoritos</p>
+
+  <!-- Encabezado unificado -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="../img/logo-bibliotaku.png" alt="Logo Bibliotaku" />
+      <span>Bibliotaku</span>
+    </div>
+    <nav class="main-nav">
+      <a href="../index.html">Inicio</a>
+      <a href="en-emision.html">En emisión</a>
+      <a href="emitidos-anteriormente.html">Emitidos</a>
+      <a href="generos.html">Géneros</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="../index.html">Inicio</a>
-    <a href="en-emision.html">En emisión</a>
-    <a href="emitidos-anteriormente.html">Emitidos anteriormente</a>
-    <a href="generos.html">Géneros</a>
-  </nav>
+  <hr class="divider" />
 
-  <main class="contenido">
+  <main class="contenido contenido-limitado">
     <h2>🎭 Filtrar por género</h2>
-    <div id="filtros-genero"></div>
-    <div id="lista-generos"></div>
+
+    <div id="filtros-genero" class="filtros-genero" style="margin-bottom: 30px;"></div>
+    <div id="lista-generos" class="tarjeta-lista"></div>
   </main>
 
   <footer>
@@ -51,6 +58,7 @@
               <div class="tarjeta-info">
                 <h2>${anime.titulo}</h2>
                 <p>${anime.descripcion}</p>
+                ${anime.plataforma ? `<a href="${anime.plataforma}" target="_blank">Ver en plataforma</a>` : ''}
               </div>
             `;
             lista.appendChild(div);
@@ -79,5 +87,6 @@
 
     cargarGeneros();
   </script>
+
 </body>
 </html>

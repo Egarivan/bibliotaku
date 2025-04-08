@@ -1,61 +1,93 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bibliotaku - Biblioteca de Anime</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>📃 Bibliotaku</h1>
-    <p>Tu biblioteca virtual de anime en emisión y clásicos que marcaron historia</p>
+
+  <!-- Encabezado personalizado -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="img/logo-bibliotaku.png" alt="Logo Bibliotaku" />
+      <span>Bibliotaku</span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="pages/en-emision.html">En emisión</a>
+      <a href="pages/emitidos-anteriormente.html">Emitidos</a>
+      <a href="pages/generos.html">Géneros</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="pages/en-emision.html">En emisión</a>
-    <a href="pages/emitidos-anteriormente.html">Emitidos anteriormente</a>
-    <a href="pages/generos.html">Géneros</a>
-  </nav>
+  <hr class="divider" />
 
-  <main class="contenido">
+  <main class="contenido contenido-limitado">
+
+    <!-- DESTACADOS -->
     <h2>✨ Destacados de la semana</h2>
-    <div id="destacados"></div>
+    <div class="tarjeta-lista">
+      <div class="tarjeta">
+        <img src="img/kimetsu.jpg" alt="Kimetsu no Yaiba">
+        <div class="tarjeta-info">
+          <h2>Kimetsu no Yaiba - Temporada 4</h2>
+          <p>Tanjiro continúa su camino como cazador de demonios enfrentando nuevas lunas superiores.</p>
+          <a href="https://www.crunchyroll.com/es/series/GY5P48XEY/kimetsu-no-yaiba" target="_blank">Ver en Crunchyroll</a>
+        </div>
+      </div>
+      
+    
+      <div class="tarjeta">
+        <img src="img/frieren.jpg" alt="Frieren">
+        <div class="tarjeta-info">
+          <h2>Frieren: Más allá del final del viaje</h2>
+          <p>Una historia melancólica y mágica sobre el valor del tiempo y la amistad.</p>
+          <a href="https://www.crunchyroll.com/es/series/GYEXQKJG6/frieren-beyond-journeys-end" target="_blank">Ver en Crunchyroll</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECOMENDADOS -->
+    <h2>🌟 Recomendados por el staff</h2>
+    <div class="tarjeta-lista">
+      <div class="tarjeta">
+        <img src="img/jujutsu-kaisen.jpg" alt="Jujutsu Kaisen">
+        <div class="tarjeta-info">
+          <h2>Jujutsu Kaisen - Temporada 2</h2>
+          <p>Una serie intensa llena de acción, emociones y una animación brutalmente buena.</p>
+          <a href="https://www.crunchyroll.com/es/series/GRDV0019R/jujutsu-kaisen" target="_blank">Ver en Crunchyroll</a>
+        </div>
+      </div>
+    
+      <div class="tarjeta">
+        <img src="img/chainsaw.jpg" alt="Chainsaw Man">
+        <div class="tarjeta-info">
+          <h2>Chainsaw Man</h2>
+          <p>Estilo visual único, personajes intensos y una historia caótica y emocionante. ¡Una experiencia fuera de lo común!</p>
+          <a href="https://www.crunchyroll.com/es/series/GVDHX8QNW/chainsaw-man" target="_blank">Ver en Crunchyroll</a>
+        </div>
+      </div>
+    </div>
+
   </main>
+
+  <!-- SOBRE NOSOTROS -->
+  <div class="sobre-nosotros">
+    <div class="contenido-limitado">
+      <h3>¿Qué es Bibliotaku?</h3>
+      <p><strong>Bibliotaku</strong> es un espacio creado por <strong>Edgar Viaña</strong> para ofrecer a los fans del anime una nueva forma de explorar títulos, ya sean actuales o clásicos. Esta biblioteca digital no busca solo listar animes, sino brindar una experiencia de navegación distinta, clara y cómoda.</p>
+
+      <p>Aquí encontrarás recomendaciones semanales, organización por géneros y temporadas, y una presentación visual pensada para los fans.</p>
+
+      <p>¡Cada visita será una nueva aventura otaku!</p>
+    </div>
+  </div>
 
   <footer>
     © 2025 Bibliotaku. Todos los derechos reservados.
   </footer>
 
-  <script>
-    async function cargarDestacados() {
-      try {
-        const res = await fetch("data/animes.json");
-        const animes = await res.json();
-
-        const contenedor = document.getElementById("destacados");
-        contenedor.innerHTML = "";
-
-        const destacados = animes.filter(anime => anime.destacado);
-
-        destacados.forEach(anime => {
-          const div = document.createElement("div");
-          div.className = "tarjeta";
-          div.innerHTML = `
-            <img src="${anime.imagen.replace("../", "")}" alt="${anime.titulo}" />
-            <div class="tarjeta-info">
-              <h2>${anime.titulo}</h2>
-              <p>${anime.descripcion}</p>
-            </div>
-          `;
-          contenedor.appendChild(div);
-        });
-      } catch (error) {
-        console.error("Error al cargar los destacados:", error);
-      }
-    }
-
-    cargarDestacados();
-  </script>
 </body>
 </html>

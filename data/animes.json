@@ -6,6 +6,7 @@
       "imagen_index": "img/jujutsu-kaisen.jpg",
       "generos": ["acción"],
       "estado": "emision",
+      "plataforma":"https://www.crunchyroll.com/es/series/GRDV0019R/jujutsu-kaisen",
       "destacado": true
     },
     {
@@ -24,6 +25,7 @@
       "imagen_index": "img/solo-leveling.jpg",
       "generos": ["acción", "fantasía"],
       "estado": "emision",
+      "plataforma":"https://www.crunchyroll.com/es/series/GRDV0019R/jujutsu-kaisen",
       "destacado": true
     },
     {
@@ -78,6 +80,7 @@
     "imagen_index": "img/kimetsu.jpg",
     "generos": ["acción", "fantasía"],
     "estado": "emision",
+    "plataforma":"https://www.crunchyroll.com/es/series/GRDV0019R/jujutsu-kaisen",
     "destacado": true
     },
     {
