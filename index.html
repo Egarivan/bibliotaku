@@ -22,28 +22,40 @@
 
   <main class="contenido">
     <h2>✨ Destacados de la semana</h2>
-
-    <div class="tarjeta">
-      <img src="img/kimetsu.jpg" alt="Kimetsu no Yaiba" />
-      <div class="tarjeta-info">
-        <h2>Kimetsu no Yaiba - Temporada 4</h2>
-        <p>Tanjiro continúa su camino como cazador de demonios enfrentando nuevas lunas superiores.</p>
-      </div>
-    </div>
-
-    <div class="tarjeta">
-      <img src="img/frieren.jpg" alt="Frieren" />
-      <div class="tarjeta-info">
-        <h2>Frieren: Más allá del final del viaje</h2>
-        <p>Una historia melancólica y mágica sobre el valor del tiempo y la amistad.</p>
-      </div>
-    </div>
-
+    <div id="destacados"></div>
   </main>
 
   <footer>
     © 2025 Bibliotaku. Todos los derechos reservados.
   </footer>
+
+  <script>
+    async function cargarDestacados() {
+      try {
+        const res = await fetch('data/animes.json');
+        const animes = await res.json();
+        const destacados = animes.filter(anime => anime.destacado === true);
+        const contenedor = document.getElementById('destacados');
+
+        destacados.forEach(anime => {
+          const div = document.createElement('div');
+          div.className = 'tarjeta';
+          div.innerHTML = `
+            <img src="${anime.imagen}" alt="${anime.titulo}" />
+            <div class="tarjeta-info">
+              <h2>${anime.titulo}</h2>
+              <p>${anime.descripcion}</p>
+            </div>
+          `;
+          contenedor.appendChild(div);
+        });
+      } catch (error) {
+        console.error("Error cargando animes destacados:", error);
+      }
+    }
+
+    cargarDestacados();
+  </script>
 
 </body>
 </html>
