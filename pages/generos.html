@@ -1,116 +1,83 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Géneros | Bibliotaku</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliotaku - Biblioteca de Anime</title>
   <link rel="stylesheet" href="../style.css" />
-  <style>
-    .filtros {
-      text-align: center;
-      margin: 30px 0 20px;
-    }
-
-    .filtros button {
-      background-color: #4e9eff;
-      border: none;
-      color: white;
-      padding: 10px 15px;
-      margin: 5px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .filtros button:hover {
-      background-color: #397bd1;
-    }
-
-    .tarjeta {
-      display: none;
-    }
-
-    .tarjeta.visible {
-      display: flex;
-    }
-  </style>
 </head>
 <body>
+  <header>
+    <h1>📚 Bibliotaku</h1>
+    <p>Explora los animes según tus géneros favoritos</p>
+  </header>
 
-<header>
-  <h1>📚 Bibliotaku</h1>
-  <p>Explora los animes según tus géneros favoritos</p>
-</header>
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="en-emision.html">En emisión</a>
+    <a href="emitidos-anteriormente.html">Emitidos anteriormente</a>
+    <a href="generos.html">Géneros</a>
+  </nav>
 
-<nav>
-  <a href="../index.html">Inicio</a>
-  <a href="en-emision.html">En emisión</a>
-  <a href="emitidos-anteriormente.html">Emitidos anteriormente</a>
-  <a href="generos.html">Géneros</a>
-</nav>
+  <main class="contenido">
+    <h2>🎭 Filtrar por género</h2>
+    <div id="filtros-genero"></div>
+    <div id="lista-generos"></div>
+  </main>
 
-<main class="contenido">
-  <h2>🎭 Filtrar por género</h2>
+  <footer>
+    © 2025 Bibliotaku. Todos los derechos reservados.
+  </footer>
 
-  <div class="filtros">
-    <button onclick="filtrar('todos')">Todos</button>
-    <button onclick="filtrar('accion')">Acción</button>
-    <button onclick="filtrar('comedia')">Comedia</button>
-    <button onclick="filtrar('drama')">Drama</button>
-    <button onclick="filtrar('romance')">Romance</button>
-  </div>
+  <script>
+    async function cargarGeneros() {
+      try {
+        const res = await fetch("../data/animes.json");
+        const animes = await res.json();
 
-  <div id="contenedor-animes"></div>
-</main>
+        const generosUnicos = new Set();
+        animes.forEach(anime => anime.generos.forEach(g => generosUnicos.add(g)));
 
-<footer>
-  © 2025 Bibliotaku. Todos los derechos reservados.
-</footer>
+        const filtros = document.getElementById("filtros-genero");
+        const lista = document.getElementById("lista-generos");
 
-<script>
-  let todosLosAnimes = [];
+        function mostrar(genero) {
+          lista.innerHTML = "";
+          const filtrados = genero === 'todos' ? animes : animes.filter(anime => anime.generos.includes(genero));
+          filtrados.forEach(anime => {
+            const div = document.createElement("div");
+            div.className = "tarjeta";
+            div.innerHTML = `
+              <img src="../${anime.imagen.replace("../", "")}" alt="${anime.titulo}" />
+              <div class="tarjeta-info">
+                <h2>${anime.titulo}</h2>
+                <p>${anime.descripcion}</p>
+              </div>
+            `;
+            lista.appendChild(div);
+          });
+        }
 
-  async function cargarAnimes() {
-    const res = await fetch('../data/animes.json');
-    const animes = await res.json();
-    todosLosAnimes = animes;
-    mostrarAnimes(animes);
-  }
+        const botonTodos = document.createElement("button");
+        botonTodos.textContent = "Todos";
+        botonTodos.className = "boton-genero";
+        botonTodos.onclick = () => mostrar("todos");
+        filtros.appendChild(botonTodos);
 
-  function mostrarAnimes(animes) {
-    const contenedor = document.getElementById('contenedor-animes');
-    contenedor.innerHTML = "";
+        generosUnicos.forEach(genero => {
+          const boton = document.createElement("button");
+          boton.textContent = genero.charAt(0).toUpperCase() + genero.slice(1);
+          boton.className = "boton-genero";
+          boton.onclick = () => mostrar(genero);
+          filtros.appendChild(boton);
+        });
 
-    animes.forEach(anime => {
-      const div = document.createElement('div');
-      div.className = 'tarjeta visible';
-      div.setAttribute('data-genero', anime.generos.join(" "));
-
-      div.innerHTML = `
-        <img src="${anime.imagen}" alt="${anime.titulo}">
-        <div class="tarjeta-info">
-          <h2>${anime.titulo}</h2>
-          <p>${anime.descripcion}</p>
-        </div>
-      `;
-      contenedor.appendChild(div);
-    });
-  }
-
-  function filtrar(genero) {
-    const tarjetas = document.querySelectorAll('.tarjeta');
-    tarjetas.forEach(t => {
-      const generos = t.getAttribute('data-genero').toLowerCase();
-      if (genero === 'todos' || generos.includes(genero)) {
-        t.classList.add('visible');
-      } else {
-        t.classList.remove('visible');
+        mostrar("todos");
+      } catch (err) {
+        console.error("Error cargando géneros:", err);
       }
-    });
-  }
+    }
 
-  cargarAnimes();
-</script>
-
+    cargarGeneros();
+  </script>
 </body>
 </html>
