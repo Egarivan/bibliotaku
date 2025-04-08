@@ -1,16 +1,48 @@
-<script>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliotaku - Biblioteca de Anime</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📃 Bibliotaku</h1>
+    <p>Tu biblioteca virtual de anime en emisión y clásicos que marcaron historia</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="pages/en-emision.html">En emisión</a>
+    <a href="pages/emitidos-anteriormente.html">Emitidos anteriormente</a>
+    <a href="pages/generos.html">Géneros</a>
+  </nav>
+
+  <main class="contenido">
+    <h2>✨ Destacados de la semana</h2>
+    <div id="destacados"></div>
+  </main>
+
+  <footer>
+    © 2025 Bibliotaku. Todos los derechos reservados.
+  </footer>
+
+  <script>
     async function cargarDestacados() {
       try {
-        const res = await fetch('data/animes.json');
+        const res = await fetch("data/animes.json");
         const animes = await res.json();
-        const contenedor = document.querySelector('.contenido');
-        const destacados = animes.filter(anime => anime.destacado === true);
-  
+
+        const contenedor = document.getElementById("destacados");
+        contenedor.innerHTML = "";
+
+        const destacados = animes.filter(anime => anime.destacado);
+
         destacados.forEach(anime => {
-          const div = document.createElement('div');
-          div.className = 'tarjeta';
+          const div = document.createElement("div");
+          div.className = "tarjeta";
           div.innerHTML = `
-            <img src="${anime.imagen_index}" alt="${anime.titulo}" />
+            <img src="${anime.imagen.replace("../", "")}" alt="${anime.titulo}" />
             <div class="tarjeta-info">
               <h2>${anime.titulo}</h2>
               <p>${anime.descripcion}</p>
@@ -19,10 +51,11 @@
           contenedor.appendChild(div);
         });
       } catch (error) {
-        console.error('Error al cargar los animes destacados:', error);
+        console.error("Error al cargar los destacados:", error);
       }
     }
-  
+
     cargarDestacados();
   </script>
-  
+</body>
+</html>
