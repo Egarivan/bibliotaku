@@ -1,0 +1,21 @@
+[
+    {
+      "titulo": "Jujutsu Kaisen",
+      "descripcion": "Anime cargado de acción sobrenatural, hechicería y batallas impresionantes.",
+      "imagen": "../img/jujutsu-kaisen.jpg",
+      "generos": ["accion", "sobrenatural"]
+    },
+    {
+      "titulo": "Horimiya",
+      "descripcion": "Una comedia romántica fresca y emotiva con personajes entrañables.",
+      "imagen": "../img/horimiya.jpg",
+      "generos": ["romance", "comedia"]
+    },
+    {
+      "titulo": "A Silent Voice",
+      "descripcion": "Un drama conmovedor sobre bullying, redención y segundas oportunidades.",
+      "imagen": "../img/a-silent-voice.jpg",
+      "generos": ["drama"]
+    }
+  ]
+  
