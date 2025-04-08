@@ -2,50 +2,87 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Emitidos anteriormente | Bibliotaku</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    .tarjeta {
+      display: flex;
+      background-color: #2a2c45;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .tarjeta img {
+      width: 150px;
+      border-radius: 10px;
+    }
+
+    .tarjeta-info {
+      flex: 1;
+    }
+
+    .tarjeta-info h2 {
+      margin: 0 0 10px;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <h1>📚 Bibliotaku</h1>
-    <p>Tu biblioteca virtual de anime en emisión y clásicos que marcaron historia</p>
-  </header>
+<header>
+  <h1>📼 Bibliotaku</h1>
+  <p>Animes que ya finalizaron pero siguen siendo recomendados</p>
+</header>
 
-  <nav>
-    <a href="../index.html">Inicio</a>
-    <a href="en-emision.html">En emisión</a>
-    <a href="emitidos-anteriormente.html">Emitidos anteriormente</a>
-    <a href="generos.html">Géneros</a>
-  </nav>
+<nav>
+  <a href="../index.html">Inicio</a>
+  <a href="en-emision.html">En emisión</a>
+  <a href="emitidos-anteriormente.html">Emitidos anteriormente</a>
+  <a href="generos.html">Géneros</a>
+</nav>
 
-  <main class="contenido">
-    <h2>🕰️ Emitidos anteriormente</h2>
+<main class="contenido">
+  <h2>🕰️ Animes emitidos anteriormente</h2>
+  <div id="lista-emitidos"></div>
+</main>
 
-    <div class="tarjeta">
-      <img src="../img/fullmetal.jpg" alt="Fullmetal Alchemist: Brotherhood">
-      <div class="tarjeta-info">
-        <h2>Fullmetal Alchemist: Brotherhood</h2>
-        <p>Edward y Alphonse Elric se enfrentan a los límites de la alquimia en una aventura épica cargada de acción, emoción y filosofía.</p>
-        <p><strong>Disponible en:</strong> <a href="https://www.netflix.com/title/70204981" target="_blank">Netflix</a></p>
-      </div>
-    </div>
+<footer>
+  © 2025 Bibliotaku. Todos los derechos reservados.
+</footer>
 
-    <div class="tarjeta">
-      <img src="../img/steins-gate.jpg" alt="Steins;Gate">
-      <div class="tarjeta-info">
-        <h2>Steins;Gate</h2>
-        <p>Un grupo de jóvenes descubre cómo enviar mensajes al pasado, desatando consecuencias que pondrán en juego la línea temporal.</p>
-        <p><strong>Disponible en:</strong> <a href="https://www.crunchyroll.com/es/series/GYWE7W1Y6/steinsgate" target="_blank">Crunchyroll</a></p>
-      </div>
-    </div>
+<script>
+  async function cargarAnimesEmitidos() {
+    try {
+      const res = await fetch('../data/animes.json');
+      const animes = await res.json();
+      const contenedor = document.getElementById('lista-emitidos');
+      contenedor.innerHTML = '';
 
-  </main>
+      const emitidos = animes.filter(anime => anime.estado === 'emitido');
 
-  <footer>
-    © 2025 Bibliotaku. Todos los derechos reservados.
-  </footer>
+      emitidos.forEach(anime => {
+        const div = document.createElement('div');
+        div.className = 'tarjeta';
+        div.innerHTML = `
+          <img src="${anime.imagen}" alt="${anime.titulo}">
+          <div class="tarjeta-info">
+            <h2>${anime.titulo}</h2>
+            <p>${anime.descripcion}</p>
+          </div>
+        `;
+        contenedor.appendChild(div);
+      });
+
+    } catch (error) {
+      console.error("Error cargando animes:", error);
+    }
+  }
+
+  cargarAnimesEmitidos();
+</script>
 
 </body>
 </html>
