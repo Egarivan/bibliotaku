@@ -4,7 +4,9 @@
     "descripcion": "Anime cargado de acción sobrenatural, hechicería y batallas impresionantes.",
     "imagen": "../img/jujutsu-kaisen.jpg",
     "imagen_index": "img/jujutsu-kaisen.jpg",
-    "generos": ["acción"],
+    "generos": [
+      "acción"
+    ],
     "estado": "emision",
     "plataforma": "https://www.crunchyroll.com/es/series/GRDV0019R/jujutsu-kaisen",
     "destacado": true
@@ -14,7 +16,10 @@
     "descripcion": "Una comedia romántica fresca y emotiva con personajes entrañables.",
     "imagen": "../img/horimiya.jpg",
     "imagen_index": "img/horimiya.jpg",
-    "generos": ["comedia", "romance"],
+    "generos": [
+      "comedia",
+      "romance"
+    ],
     "estado": "emitido",
     "plataforma": "https://www.crunchyroll.com/es/series/GYEXQKJG6/horimiya",
     "destacado": false
@@ -24,7 +29,10 @@
     "descripcion": "Sung Jin-Woo, el cazador más débil, despierta un poder que podría cambiar el mundo.",
     "imagen": "../img/solo-leveling.jpg",
     "imagen_index": "img/solo-leveling.jpg",
-    "generos": ["acción", "fantasía"],
+    "generos": [
+      "acción",
+      "fantasía"
+    ],
     "estado": "emision",
     "plataforma": "https://www.crunchyroll.com/es/series/GK5H5XQKX/solo-leveling",
     "destacado": true
@@ -34,7 +42,10 @@
     "descripcion": "Una historia melancólica y mágica sobre el valor del tiempo y la amistad.",
     "imagen": "../img/frieren.jpg",
     "imagen_index": "img/frieren.jpg",
-    "generos": ["fantasía", "drama"],
+    "generos": [
+      "fantasía",
+      "drama"
+    ],
     "estado": "emitido",
     "plataforma": "https://www.crunchyroll.com/es/series/GYEXQKJG6/frieren-beyond-journeys-end",
     "destacado": true
@@ -44,7 +55,11 @@
     "descripcion": "Los hermanos Elric luchan por recuperar lo que perdieron tras un intento fallido de alquimia prohibida.",
     "imagen": "../img/fullmetal.jpg",
     "imagen_index": "img/fullmetal.jpg",
-    "generos": ["acción", "drama", "fantasía"],
+    "generos": [
+      "acción",
+      "drama",
+      "fantasía"
+    ],
     "estado": "emitido",
     "plataforma": "https://www.crunchyroll.com/es/series/G6NQ5DWZ6/fullmetal-alchemist-brotherhood",
     "destacado": false
@@ -54,7 +69,10 @@
     "descripcion": "Un grupo de jóvenes descubre cómo enviar mensajes al pasado y desencadena consecuencias inesperadas.",
     "imagen": "../img/steins-gate.jpg",
     "imagen_index": "img/steins-gate.jpg",
-    "generos": ["drama", "ciencia ficción"],
+    "generos": [
+      "drama",
+      "ciencia ficción"
+    ],
     "estado": "emitido",
     "plataforma": "https://www.crunchyroll.com/es/series/G6GG0HP86/steinsgate",
     "destacado": false
@@ -64,7 +82,11 @@
     "descripcion": "Dos adolescentes descubren que están conectados misteriosamente a través del tiempo y el espacio.",
     "imagen": "../img/your-name.jpg",
     "imagen_index": "img/your-name.jpg",
-    "generos": ["drama", "romance", "fantasía"],
+    "generos": [
+      "drama",
+      "romance",
+      "fantasía"
+    ],
     "estado": "emitido",
     "plataforma": "https://www.netflix.com/title/80117401",
     "destacado": false
@@ -74,7 +96,10 @@
     "descripcion": "Una historia emocional sobre el bullying, la redención y la discapacidad auditiva.",
     "imagen": "../img/a-silent-voice.jpg",
     "imagen_index": "img/a-silent-voice.jpg",
-    "generos": ["drama", "romance"],
+    "generos": [
+      "drama",
+      "romance"
+    ],
     "estado": "emitido",
     "plataforma": "https://www.netflix.com/title/80223226",
     "destacado": false
@@ -84,7 +109,10 @@
     "descripcion": "Tanjiro y Nezuko luchan contra demonios mientras buscan una cura para su hermana.",
     "imagen": "../img/kimetsu.jpg",
     "imagen_index": "img/kimetsu.jpg",
-    "generos": ["acción", "fantasía"],
+    "generos": [
+      "acción",
+      "fantasía"
+    ],
     "estado": "emision",
     "plataforma": "https://www.crunchyroll.com/es/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba",
     "destacado": true
@@ -94,7 +122,10 @@
     "descripcion": "Dos genios enamorados compiten por no confesar sus sentimientos primero.",
     "imagen": "../img/kaguya.jpg",
     "imagen_index": "img/kaguya.jpg",
-    "generos": ["romance", "comedia"],
+    "generos": [
+      "romance",
+      "comedia"
+    ],
     "estado": "emitido",
     "plataforma": "https://www.crunchyroll.com/es/series/GVDHX8QNW/kaguya-sama-love-is-war",
     "destacado": true
@@ -104,9 +135,13 @@
     "descripcion": "Una aventura profunda y peligrosa hacia lo desconocido en el abismo.",
     "imagen": "../img/made-in-abyss.jpg",
     "imagen_index": "img/made-in-abyss.jpg",
-    "generos": ["aventura", "fantasía", "drama"],
+    "generos": [
+      "aventura",
+      "fantasía",
+      "drama"
+    ],
     "estado": "emitido",
-    "plataforma": "https://www.crunchyroll.com/es/series/GYWE7K0VY/made-in-abyss",
+    "plataforma": "https://www.hidive.com/tv/made-in-abyss",
     "destacado": false
   },
   {
@@ -114,7 +149,11 @@
     "descripcion": "Subaru es transportado a un mundo de fantasía donde revivir tras la muerte es su poder.",
     "imagen": "../img/rezero.jpg",
     "imagen_index": "img/rezero.jpg",
-    "generos": ["acción", "fantasía", "drama"],
+    "generos": [
+      "acción",
+      "fantasía",
+      "drama"
+    ],
     "estado": "emitido",
     "plataforma": "https://www.crunchyroll.com/es/series/G6NQ5DWZ6/rezero",
     "destacado": false
