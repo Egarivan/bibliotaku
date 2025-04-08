@@ -2,7 +2,7 @@
     {
       "titulo": "Jujutsu Kaisen",
       "descripcion": "Anime cargado de acción sobrenatural, hechicería y batallas impresionantes.",
-      "imagen": "/img/jujutsu-kaisen.jpg",
+      "imagen": "img/jujutsu-kaisen.jpg",
       "generos": ["accion", "sobrenatural"],
       "estado": "emision",
       "destacado": true
@@ -11,7 +11,7 @@
     {
         "titulo": "Solo Leveling",
         "descripcion": "Sung Jin-Woo, el cazador más débil, despierta un poder que podría cambiar el mundo. Uno de los estrenos más esperados del año.",
-        "imagen": "/img/solo-leveling.jpg",
+        "imagen": "img/solo-leveling.jpg",
         "generos": ["accion", "sobrenatural"],
         "estado": "emision",
         "destacado": true
@@ -20,7 +20,7 @@
     {
       "titulo": "Horimiya",
       "descripcion": "Una comedia romántica fresca y emotiva con personajes entrañables.",
-      "imagen": "/img/horimiya.jpg",
+      "imagen": "img/horimiya.jpg",
       "generos": ["romance", "comedia"],
       "estado": "emitido",
       "destacado": true
@@ -29,7 +29,7 @@
     {
       "titulo": "A Silent Voice",
       "descripcion": "Un drama conmovedor sobre bullying, redención y segundas oportunidades.",
-      "imagen": "/img/a-silent-voice.jpg",
+      "imagen": "img/a-silent-voice.jpg",
       "generos": ["drama"],
       "estado": "emitido",
       "destacado": true
@@ -38,7 +38,7 @@
     {
       "titulo": "Demon Slayer",
       "descripcion": "Tanjiro y Nezuko luchan contra demonios mientras buscan una cura para su hermana.",
-      "imagen": "/img/kimetsu.jpg",
+      "imagen": "img/kimetsu.jpg",
       "generos": ["accion", "fantasia"],
       "estado": "emision",
       "destacado": true
@@ -47,7 +47,7 @@
     {
       "titulo": "Kaguya-sama: Love is War",
       "descripcion": "Dos genios enamorados compiten por no confesar sus sentimientos primero.",
-      "imagen": "/img/kaguya.jpg",
+      "imagen": "img/kaguya.jpg",
       "generos": ["romance", "comedia"],
       "estado": "emitido",
       "destacado": true
@@ -56,7 +56,7 @@
     {
       "titulo": "Made in Abyss",
       "descripcion": "Una aventura profunda y peligrosa hacia lo desconocido en el abismo.",
-      "imagen": "/img/made-in-abyss.jpg",
+      "imagen": "img/made-in-abyss.jpg",
       "generos": ["aventura", "fantasia", "drama"],
       "estado": "emitido",
       "destacado": false
@@ -65,7 +65,7 @@
     {
       "titulo": "Re:Zero",
       "descripcion": "Subaru es transportado a un mundo de fantasía donde revivir tras la muerte es su poder.",
-      "imagen": "/img/rezero.jpg",
+      "imagen": "img/rezero.jpg",
       "generos": ["accion", "fantasia", "drama"],
       "estado": "emitido",
       "destacado": false
@@ -74,7 +74,7 @@
     {
       "titulo": "Your Name",
       "descripcion": "Dos adolescentes conectan a través del tiempo y el espacio en una historia mágica.",
-      "imagen": "/img/your-name.jpg",
+      "imagen": "img/your-name.jpg",
       "generos": ["romance", "drama", "fantasia"],
       "estado": "emitido",
       "destacado": false
