@@ -4,182 +4,143 @@
     "descripcion": "Anime cargado de acción sobrenatural, hechicería y batallas impresionantes.",
     "imagen": "../img/jujutsu-kaisen.jpg",
     "imagen_index": "img/jujutsu-kaisen.jpg",
-    "generos": [
-      "acción"
-    ],
-    "estado": "emision",
+    "generos": ["acción"],
     "plataforma": "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen",
     "destacado": true,
     "recomendado": false,
-    "emision": true
+    "emision": true,
+    "fin_emision": "2025-04-30"
   },
   {
     "titulo": "Horimiya",
     "descripcion": "Una comedia romántica fresca y emotiva con personajes entrañables.",
     "imagen": "../img/horimiya.jpg",
     "imagen_index": "img/horimiya.jpg",
-    "generos": [
-      "comedia",
-      "romance"
-    ],
-    "estado": "emitido",
+    "generos": ["comedia", "romance"],
     "plataforma": "https://www.crunchyroll.com/es/series/G9VHN9P43/horimiya",
     "destacado": false,
     "recomendado": false,
-    "emision": false
+    "emision": false,
+    "fin_emision": "2025-04-30"
   },
   {
     "titulo": "Solo Leveling",
     "descripcion": "Sung Jin-Woo, el cazador más débil, despierta un poder que podría cambiar el mundo.",
     "imagen": "../img/solo-leveling.jpg",
     "imagen_index": "img/solo-leveling.jpg",
-    "generos": [
-      "acción",
-      "fantasía"
-    ],
-    "estado": "emision",
+    "generos": ["acción", "fantasía"],
     "plataforma": "https://www.crunchyroll.com/es/series/GDKHZEJ0K/solo-leveling",
     "destacado": true,
     "recomendado": false,
-    "emision": true
+    "emision": true,
+    "fin_emision": "2025-04-30"
   },
   {
     "titulo": "Frieren: Más allá del final del viaje",
     "descripcion": "Una historia melancólica y mágica sobre el valor del tiempo y la amistad.",
     "imagen": "../img/frieren.jpg",
     "imagen_index": "img/frieren.jpg",
-    "generos": [
-      "fantasía",
-      "drama"
-    ],
-    "estado": "emitido",
+    "generos": ["fantasía", "drama"],
     "plataforma": "https://www.crunchyroll.com/es/series/GG5H5XQX4/frieren-beyond-journeys-end",
     "destacado": true,
     "recomendado": false,
-    "emision": false
+    "emision": false,
+    "fin_emision": "2025-04-30"
   },
   {
     "titulo": "Fullmetal Alchemist: Brotherhood",
     "descripcion": "Los hermanos Elric luchan por recuperar lo que perdieron tras un intento fallido de alquimia prohibida.",
     "imagen": "../img/fullmetal.jpg",
     "imagen_index": "img/fullmetal.jpg",
-    "generos": [
-      "acción",
-      "drama",
-      "fantasía"
-    ],
-    "estado": "emitido",
+    "generos": ["acción", "drama", "fantasía"],
     "plataforma": "https://www.crunchyroll.com/es/series/GRGGPG93R/fullmetal-alchemist-brotherhood",
     "destacado": false,
     "recomendado": true,
-    "emision": false
+    "emision": false,
+    "fin_emision": "2025-04-30"
   },
   {
     "titulo": "Steins;Gate",
     "descripcion": "Un grupo de jóvenes descubre cómo enviar mensajes al pasado y desencadena consecuencias inesperadas.",
     "imagen": "../img/steins-gate.jpg",
     "imagen_index": "img/steins-gate.jpg",
-    "generos": [
-      "drama",
-      "ciencia ficción"
-    ],
-    "estado": "emitido",
+    "generos": ["drama", "ciencia ficción"],
     "plataforma": "https://www.primevideo.com/dp/amzn1.dv.gti.6ead2487-0948-17d0-7dbb-c2edfbbf3b1c?autoplay=0&ref_=atv_cf_strg_wb",
     "destacado": false,
     "recomendado": true,
-    "emision": false
+    "emision": false,
+    "fin_emision": "2025-04-30"
   },
   {
     "titulo": "Your Name",
     "descripcion": "Dos adolescentes descubren que están conectados misteriosamente a través del tiempo y el espacio.",
     "imagen": "../img/your-name.jpg",
     "imagen_index": "img/your-name.jpg",
-    "generos": [
-      "drama",
-      "romance",
-      "fantasía"
-    ],
-    "estado": "emitido",
+    "generos": ["drama", "romance", "fantasía"],
     "plataforma": "https://www.crunchyroll.com/es/series/G9VHN9PK3/your-name",
     "destacado": false,
     "recomendado": false,
-    "emision": false
+    "emision": false,
+    "fin_emision": "2025-04-30"
   },
   {
     "titulo": "A Silent Voice",
     "descripcion": "Una historia emocional sobre el bullying, la redención y la discapacidad auditiva.",
     "imagen": "../img/a-silent-voice.jpg",
     "imagen_index": "img/a-silent-voice.jpg",
-    "generos": [
-      "drama",
-      "romance"
-    ],
-    "estado": "emitido",
+    "generos": ["drama", "romance"],
     "plataforma": "https://tv.apple.com/us/movie/una-voz-silenciosa/umc.cmc.282ki73q0ozcam7a76c50mizk?l=es-MX",
     "destacado": false,
     "recomendado": true,
-    "emision": false
+    "emision": false,
+    "fin_emision": "2025-04-30"
   },
   {
     "titulo": "Demon Slayer",
     "descripcion": "Tanjiro y Nezuko luchan contra demonios mientras buscan una cura para su hermana.",
     "imagen": "../img/kimetsu.jpg",
     "imagen_index": "img/kimetsu.jpg",
-    "generos": [
-      "acción",
-      "fantasía"
-    ],
-    "estado": "emision",
+    "generos": ["acción", "fantasía"],
     "plataforma": "https://www.crunchyroll.com/es/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba",
     "destacado": true,
     "recomendado": false,
-    "emision": true
+    "emision": true,
+    "fin_emision": "2025-04-30"
   },
   {
     "titulo": "Kaguya-sama: Love is War",
     "descripcion": "Dos genios enamorados compiten por no confesar sus sentimientos primero.",
     "imagen": "../img/kaguya.jpg",
     "imagen_index": "img/kaguya.jpg",
-    "generos": [
-      "romance",
-      "comedia"
-    ],
-    "estado": "emitido",
+    "generos": ["romance", "comedia"],
     "plataforma": "https://www.crunchyroll.com/es/series/GRJ0J828Y/kaguya-sama-love-is-war",
     "destacado": true,
     "recomendado": true,
-    "emision": false
+    "emision": false,
+    "fin_emision": "2025-04-30"
   },
   {
     "titulo": "Made in Abyss",
     "descripcion": "Una aventura profunda y peligrosa hacia lo desconocido en el abismo.",
     "imagen": "../img/made-in-abyss.jpg",
     "imagen_index": "img/made-in-abyss.jpg",
-    "generos": [
-      "aventura",
-      "fantasía",
-      "drama"
-    ],
-    "estado": "emitido",
+    "generos": ["aventura", "fantasía", "drama"],
     "plataforma": "https://www.netflix.com/co/title/80193163?source=35",
     "destacado": false,
     "recomendado": false,
-    "emision": false
+    "emision": false,
+    "fin_emision": "2025-04-30"
   },
   {
     "titulo": "Re:Zero",
     "descripcion": "Subaru es transportado a un mundo de fantasía donde revivir tras la muerte es su poder.",
     "imagen": "../img/rezero.jpg",
     "imagen_index": "img/rezero.jpg",
-    "generos": [
-      "acción",
-      "fantasía",
-      "drama"
-    ],
-    "estado": "emitido",
+    "generos": ["acción", "fantasía", "drama"],
     "plataforma": "https://www.crunchyroll.com/es/series/GRGG9798R/rezero--starting-life-in-another-world-",
     "destacado": false,
     "recomendado": false,
-    "emision": false
+    "emision": false,
+    "fin_emision": "2025-04-30"
   }
 ]
