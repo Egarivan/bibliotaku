@@ -150,3 +150,37 @@ body {
 .boton-genero:hover {
   background-color: #4ab4c9;
 }
+
+.info-legal {
+  background: linear-gradient(to bottom, #0a0a0a, #111822, #0a0a0a);
+  border-top: 2px solid #2bd3f3;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 40px 0;
+  color: #ccc;
+}
+
+.info-titulo {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.info-links {
+  list-style: none;
+  padding: 0;
+}
+
+.info-links li {
+  margin-bottom: 10px;
+}
+
+.info-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-links a:hover {
+  color: #2bd3f3;
+}
