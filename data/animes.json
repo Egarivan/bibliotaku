@@ -6,9 +6,9 @@
     "imagen_index": "img/jujutsu-kaisen.jpg",
     "generos": ["acción"],
     "plataforma": "https://www.crunchyroll.com/series/GRDV0019R/jujutsu-kaisen",
-    "destacado": true,
+    "destacado": false,
     "recomendado": false,
-    "emision": true,
+    "emision": false,
     "fin_emision": "2025-04-30"
   },
   {
@@ -42,7 +42,7 @@
     "imagen_index": "img/frieren.jpg",
     "generos": ["fantasía", "drama"],
     "plataforma": "https://www.crunchyroll.com/es/series/GG5H5XQX4/frieren-beyond-journeys-end",
-    "destacado": true,
+    "destacado": false,
     "recomendado": false,
     "emision": false,
     "fin_emision": "2025-04-30"
@@ -67,7 +67,7 @@
     "generos": ["drama", "ciencia ficción"],
     "plataforma": "https://www.primevideo.com/dp/amzn1.dv.gti.6ead2487-0948-17d0-7dbb-c2edfbbf3b1c?autoplay=0&ref_=atv_cf_strg_wb",
     "destacado": false,
-    "recomendado": true,
+    "recomendado": false,
     "emision": false,
     "fin_emision": "2025-04-30"
   },
@@ -91,7 +91,7 @@
     "generos": ["drama", "romance"],
     "plataforma": "https://tv.apple.com/us/movie/una-voz-silenciosa/umc.cmc.282ki73q0ozcam7a76c50mizk?l=es-MX",
     "destacado": false,
-    "recomendado": true,
+    "recomendado": false,
     "emision": false,
     "fin_emision": "2025-04-30"
   },
@@ -102,9 +102,9 @@
     "imagen_index": "img/kimetsu.jpg",
     "generos": ["acción", "fantasía"],
     "plataforma": "https://www.crunchyroll.com/es/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba",
-    "destacado": true,
+    "destacado": false,
     "recomendado": false,
-    "emision": true,
+    "emision": false,
     "fin_emision": "2025-04-30"
   },
   {
@@ -114,8 +114,8 @@
     "imagen_index": "img/kaguya.jpg",
     "generos": ["romance", "comedia"],
     "plataforma": "https://www.crunchyroll.com/es/series/GRJ0J828Y/kaguya-sama-love-is-war",
-    "destacado": true,
-    "recomendado": true,
+    "destacado": false,
+    "recomendado": false,
     "emision": false,
     "fin_emision": "2025-04-30"
   },
@@ -142,5 +142,29 @@
     "recomendado": false,
     "emision": false,
     "fin_emision": "2025-04-30"
+  },
+  {
+    "titulo": "Fire Force Temporada 3",
+    "descripcion": "¡Tachados de traidores, Shinra y la Compañía 8 luchan solos para salvar a Obi y detener al Evangelista!",
+    "imagen": "../img/fireforge.jpg",
+    "imagen_index": "img/fireforge.jpg",
+    "generos": ["acción", "fantasía"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/GYQWNXPZY/fire-force",
+    "destacado": false,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30"
+  },
+  {
+    "titulo": "Please Put Them On, Takamine-san",
+    "descripcion": "Takane Takamine, presidenta del consejo estudiantil, es toda una estrella en el instituto. Por otro lado, Koushi Shirota no es que tenga muchos amigos. Todo cambia cuando Koushi descubre por casualidad la habilidad de Takane para volver atrás en el tiempo y alterar el pasado con tan solo quitarse la ropa interior. Después de darle un poco la lata, Koushi acepta ayudar a Takane y ser su guardarropa personal... teniendo siempre a mano ropa interior de repuesto.",
+    "imagen": "../img/takamine.jpg",
+    "imagen_index": "img/takamine.jpg",
+    "generos": ["drama", "romance"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/G3KHEVD1D/please-put-them-on-takamine-san",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30"
   }
 ]
