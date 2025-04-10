@@ -72,12 +72,6 @@
           });
         }
 
-        // Botón para limpiar selección
-        const limpiarBtn = document.createElement("button");
-        limpiarBtn.textContent = "Limpiar selección";
-        limpiarBtn.className = "boton-genero";
-        limpiarBtn.onclick = () => lista.innerHTML = "";
-        filtros.appendChild(limpiarBtn);
 
         // Botones de géneros
         generosUnicos.forEach(genero => {
