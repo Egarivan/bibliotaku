@@ -47,9 +47,7 @@
         const animes = await res.json();
 
         const generosUnicos = new Set();
-        animes
-          .filter(anime => anime.emision === false)
-          .forEach(anime => anime.generos.forEach(g => generosUnicos.add(g)));
+        animes.forEach(anime => anime.generos.forEach(g => generosUnicos.add(g)));
 
         const filtros = document.getElementById("filtros-genero");
         const lista = document.getElementById("lista-generos");
@@ -57,9 +55,7 @@
         function mostrar(genero) {
           lista.innerHTML = "";
 
-          const filtrados = animes.filter(
-            anime => anime.emision === false && anime.generos.includes(genero)
-          );
+          const filtrados = animes.filter(anime => anime.generos.includes(genero));
 
           filtrados.forEach(anime => {
             const div = document.createElement("div");
