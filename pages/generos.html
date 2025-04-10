@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Filtrar por género | Bibliotaku</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    .boton-genero.activo {
+      background-color: #235e79; /* color azul claro */
+      color: black;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
@@ -28,18 +35,30 @@
   <main class="contenido contenido-limitado">
     <h2>🎭 Filtrar por género</h2>
 
-    <!-- 🔹 AQUÍ SE MUESTRAN LOS BOTONES DE GÉNERO -->
+    <!-- 🔹 BOTONES DE GÉNERO -->
     <div id="filtros-genero" class="filtros-genero" style="margin-bottom: 30px;"></div>
 
-    <!-- 🔹 AQUÍ APARECEN LOS ANIMES CUANDO SE FILTRA -->
+    <!-- 🔹 ANIMES FILTRADOS -->
     <div id="lista-generos" class="tarjeta-lista"></div>
   </main>
+
+  <!-- INFORMACIÓN LEGAL -->
+  <div class="info-legal">
+    <div class="contenido-limitado">
+      <h3 class="info-titulo">Bibliotaku</h3>
+      <ul class="info-links">
+        <li><a href="sobre.html">¿Qué es Bibliotaku?</a></li>
+        <li><a href="terminos.html">Términos y condiciones</a></li>
+        <li><a href="privacidad.html">Política de privacidad</a></li>
+      </ul>
+    </div>
+  </div>
 
   <footer>
     © 2025 Bibliotaku. Todos los derechos reservados.
   </footer>
 
-  <!-- 🔧 SCRIPT DE FILTRO POR GÉNERO -->
+  <!-- 🔧 SCRIPT -->
   <script>
     async function cargarGeneros() {
       try {
@@ -52,8 +71,16 @@
         const filtros = document.getElementById("filtros-genero");
         const lista = document.getElementById("lista-generos");
 
-        function mostrar(genero) {
+        function mostrar(genero, botonActual) {
           lista.innerHTML = "";
+
+          // Resetear todos los botones activos
+          document.querySelectorAll('.boton-genero').forEach(b => b.classList.remove('activo'));
+
+          // Activar el botón clicado
+          if (botonActual) {
+            botonActual.classList.add('activo');
+          }
 
           const filtrados = animes.filter(anime => anime.generos.includes(genero));
 
@@ -72,13 +99,12 @@
           });
         }
 
-
-        // Botones de géneros
+        // Crear botones por género
         generosUnicos.forEach(genero => {
           const boton = document.createElement("button");
           boton.textContent = genero.charAt(0).toUpperCase() + genero.slice(1);
           boton.className = "boton-genero";
-          boton.onclick = () => mostrar(genero);
+          boton.onclick = () => mostrar(genero, boton);
           filtros.appendChild(boton);
         });
 
