@@ -50,42 +50,58 @@ body {
 }
 
 .tarjeta-lista {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
   margin-top: 20px;
 }
 
 .tarjeta {
-  display: flex;
   background-color: #2a2c45;
   border-radius: 12px;
   overflow: hidden;
-  gap: 20px;
-  padding: 20px;
-  align-items: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
 .tarjeta img {
-  width: 200px;
-  height: 120px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
+  margin-bottom: 10px;
 }
 
-.tarjeta-info {
-  flex: 1;
-}
-
-.tarjeta-info h2 {
-  margin: 0 0 10px;
-  font-size: 1.2em;
+.tarjeta h2 {
+  font-size: 1.1em;
+  margin: 10px 0 5px;
   color: #5ecdde;
 }
 
-.tarjeta-info p {
+.tarjeta p {
+  font-size: 0.95em;
   margin: 5px 0;
-  line-height: 1.5;
+  line-height: 1.4;
+}
+
+.tarjeta .detalle {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 0.95em;
+  margin-top: 10px;
+}
+
+.tarjeta .detalle span {
+  font-weight: normal;
+  color: #ccc;
+}
+
+.tarjeta .descripcion {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #ccc;
 }
 
 .tarjeta-info a {
@@ -103,6 +119,9 @@ body {
 .tarjeta-info a:hover {
   background-color: #48aac5;
 }
+
+
+
 
 .sobre-nosotros {
   background: linear-gradient(to bottom, #000000, #1a1e24);

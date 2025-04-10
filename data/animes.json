@@ -214,5 +214,53 @@
     "recomendado": false,
     "emision": true,
     "fin_emision": "2025-05-30"
+  },
+  {
+    "titulo": "Los Diarios de la Boticaria Temporada 2",
+    "descripcion": "Maomao y Jinshi se enfrentan a intrigas palaciegas mientras la seguridad de una concubina embarazada y una conspiración inminente chocan.",
+    "imagen": "../img/maomao.jpg",
+    "imagen_index": "img/maomao.jpg",
+    "generos": ["drama"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/G3KHEVDJ7/the-apothecary-diaries",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30"
+  },
+  {
+    "titulo": "I've Been Killing Slimes For 300 Years And Maxed Out My Level Temporada 2",
+    "descripcion": "¡Azusa y su alegre banda regresan para más aventuras y misiones relajadas en un mundo de fantasía!",
+    "imagen": "../img/azusa.jpg",
+    "imagen_index": "img/azusa.jpg",
+    "generos": ["fantasía"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/GW4HM79VM/ive-been-killing-slimes-for-300-years-and-maxed-out-my-level",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30"
+  },
+  {
+    "titulo": "#COMPASS2.0 ANIMATION PROJECT",
+    "descripcion": "El héroe rebelde 13 rechaza tener un compañero... hasta que Jin se une a él. ¿Podrán luchar para mantener en funcionamiento COMPASS2.0 y traer la paz?",
+    "imagen": "../img/compass.jpg",
+    "imagen_index": "img/compass.jpg",
+    "generos": ["acción"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/GEXH3W29Z/compass20-animation-project",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30"
+  },
+  {
+    "titulo": "A Ninja and an Assassin Under One Roof",
+    "descripcion": "Una estudiante de secundaria salva a una ninja fugitiva, pero como asesina, ¡sus habilidades hacen que su convivencia sea peligrosamente intensa!",
+    "imagen": "../img/oneroof.jpg",
+    "imagen_index": "img/oneroof.jpg",
+    "generos": ["drama", "acción"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/GNVHKN9EW/a-ninja-and-an-assassin-under-one-roof",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30"
   }
 ]
