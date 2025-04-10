@@ -166,5 +166,53 @@
     "recomendado": false,
     "emision": true,
     "fin_emision": "2025-05-30"
+  },
+  {
+    "titulo": "My Hero Academia: Vigilantes",
+    "descripcion": "¡No descartes a estos héroes poco convencionales en la nueva serie derivada de My Hero Academia!",
+    "imagen": "../img/bokunohero.jpg",
+    "imagen_index": "img/bokunohero.jpg",
+    "generos": ["acción", "fantasía"],
+    "plataforma": "https://www.crunchyroll.com/es/series/G6NQ5DWZ6/my-hero-academia",
+    "destacado": false,
+    "recomendado": true,
+    "emision": true,
+    "fin_emision": "2025-05-30"
+  },
+  {
+    "titulo": "Black Butler -Emerald Witch Arc-",
+    "descripcion": "Ciel y su leal mayordomo Sebastian se adentran en un bosque maldito en Alemania para descubrir la verdad detrás de muertes espeluznantes.",
+    "imagen": "../img/blackbutler.jpg",
+    "imagen_index": "img/blackbutler.jpg",
+    "generos": ["acción", "comedia"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GYQ43P3E6/black-butler",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30"
+  },
+  {
+    "titulo": "One Piece",
+    "descripcion": "¡Los Sombrero de Paja continúan con su aventura en la isla futurista de Egghead!",
+    "imagen": "../img/onepiece.jpg",
+    "imagen_index": "img/onepiece.jpg",
+    "generos": ["acción", "fantasía", "aventura"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GRMG8ZQZR/one-piece",
+    "destacado": false,
+    "recomendado": true,
+    "emision": true,
+    "fin_emision": "2025-05-30"
+  },
+  {
+    "titulo": "The Beginning After the End",
+    "descripcion": "Un rey renace como Arthur Leywin en un mundo mágico y busca corregir los errores de su vida pasada.",
+    "imagen": "../img/Beginning.jpg",
+    "imagen_index": "img/Beginning.jpg",
+    "generos": ["acción", "fantasía"],
+    "plataforma": "https://www.crunchyroll.com/es/series/G24H1NWKE/the-beginning-after-the-end",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30"
   }
 ]
