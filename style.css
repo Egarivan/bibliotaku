@@ -203,3 +203,19 @@ body {
 .info-links a:hover {
   color: #2bd3f3;
 }
+
+.boton-donar {
+  display: inline-block;
+  background-color: #ff5e5e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 94, 94, 0.3);
+}
+
+.boton-donar:hover {
+  background-color: #ff3c3c;
+}
