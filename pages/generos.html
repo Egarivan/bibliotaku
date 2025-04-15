@@ -11,7 +11,6 @@
   <style>
     .boton-genero.activo {
       background-color: #235e79;
-      /* color azul claro */
       color: black;
       font-weight: bold;
     }
@@ -23,14 +22,17 @@
   <!-- ENCABEZADO -->
   <header class="main-header">
     <div class="logo">
-      <img src="../img/logo-bibliotaku.png" alt="Logo Bibliotaku" />
-      <span>Bibliotaku</span>
+      <a href="../index.html" style="text-decoration: none; color: inherit;">
+        <img src="../img/logo-bibliotaku.png" alt="Logo Bibliotaku" />
+        <span>Bibliotaku</span>
+      </a>
     </div>
     <nav class="main-nav">
       <a href="../index.html">Inicio</a>
       <a href="en-emision.html">En emisión</a>
       <a href="emitidos-anteriormente.html">Emitidos</a>
       <a href="generos.html">Géneros</a>
+      <a href="donar.html">Donar</a>
     </nav>
   </header>
 
@@ -40,10 +42,10 @@
   <main class="contenido contenido-limitado">
     <h2>🎭 Filtrar por género</h2>
 
-    <!-- 🔹 BOTONES DE GÉNERO -->
+    <!-- BOTONES DE GÉNERO -->
     <div id="filtros-genero" class="filtros-genero" style="margin-bottom: 30px;"></div>
 
-    <!-- 🔹 ANIMES FILTRADOS -->
+    <!-- RESULTADO -->
     <div id="lista-generos" class="tarjeta-lista"></div>
   </main>
 
@@ -60,12 +62,11 @@
     </div>
   </div>
 
-
   <footer>
     © 2025 Bibliotaku. Todos los derechos reservados.
   </footer>
 
-  <!-- 🔧 SCRIPT -->
+  <!-- SCRIPT DE FILTRO -->
   <script>
     async function cargarGeneros() {
       try {
@@ -73,7 +74,10 @@
         const animes = await res.json();
 
         const generosUnicos = new Set();
+        const generosExtras = ["deportes", "música", "shounen", "seinen"];
+
         animes.forEach(anime => anime.generos.forEach(g => generosUnicos.add(g)));
+        generosExtras.forEach(g => generosUnicos.add(g)); // Agregamos manualmente los nuevos
 
         const filtros = document.getElementById("filtros-genero");
         const lista = document.getElementById("lista-generos");
@@ -81,15 +85,15 @@
         function mostrar(genero, botonActual) {
           lista.innerHTML = "";
 
-          // Resetear todos los botones activos
           document.querySelectorAll('.boton-genero').forEach(b => b.classList.remove('activo'));
-
-          // Activar el botón clicado
-          if (botonActual) {
-            botonActual.classList.add('activo');
-          }
+          if (botonActual) botonActual.classList.add('activo');
 
           const filtrados = animes.filter(anime => anime.generos.includes(genero));
+
+          if (filtrados.length === 0) {
+            lista.innerHTML = `<p>No hay animes disponibles en este género aún.</p>`;
+            return;
+          }
 
           filtrados.forEach(anime => {
             const div = document.createElement("div");
@@ -98,7 +102,7 @@
               <img src="../${anime.imagen.replace("../", "")}" alt="${anime.titulo}" />
               <div class="tarjeta-info">
                 <h2>${anime.titulo}</h2>
-                <p>${anime.descripcion}</p>
+                <p class="descripcion">${anime.descripcion}</p>
                 ${anime.plataforma ? `<a href="${anime.plataforma}" target="_blank">Ver en plataforma</a>` : ''}
               </div>
             `;
@@ -106,7 +110,6 @@
           });
         }
 
-        // Crear botones por género
         generosUnicos.forEach(genero => {
           const boton = document.createElement("button");
           boton.textContent = genero.charAt(0).toUpperCase() + genero.slice(1);

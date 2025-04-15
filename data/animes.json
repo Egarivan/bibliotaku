@@ -261,6 +261,71 @@
     "destacado": true,
     "recomendado": false,
     "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "jueves"
+  },
+  {
+    "titulo": "Aharen-san wa Hakarenai Temporada 2",
+    "descripcion": "¡El peculiar vínculo entre Reina y Raidou se fortalece a medida que atraviesan más momentos incómodos, divertidos y conmovedores!",
+    "imagen": "../img/aharen.jpg",
+    "imagen_index": "img/aharen.jpg",
+    "generos": ["comedia", "romance"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/GNVHKN72N/aharen-san-wa-hakarenai",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
     "fin_emision": "2025-05-30"
+  },
+  {
+    "titulo": "Catch Me at the Ballpark",
+    "descripcion": "Hastiado de su monótono trabajo, Murata encuentra refugio en un estadio de béisbol cercano. Aunque los partidos son emocionantes, lo que de verdad le interesa es Ruriko, una gal tan fría como la cerveza que sirve, pero con un corazón más tierno de lo que aparenta. Como su primer cliente habitual, Murata empieza a descubrir la dulzura oculta tras su actitud distante. Entre encuentros divertidos y conmovedores, el estadio se llena de momentos inolvidables… y quizás también de un nuevo sentimiento.",
+    "imagen": "../img/catchme.jpg",
+    "imagen_index": "img/catchme.jpg",
+    "generos": ["comedia"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/GVDHX85EQ/catch-me-at-the-ballpark",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "martes"
+  },
+  {
+    "titulo": "Once Upon a Witch’s Death",
+    "descripcion": "Meg Raspberry no es más que una aprendiz de bruja que cumple 17 años. Sin embargo, Fausto, su profesor de magia y Brujo Perenne de los Siete Sabios, le revela inesperadamente que va a morir. Para detener la maldición de la Sentencia de Muerte, Meg debe crear la Semilla de la Vida utilizando las lágrimas de alegría de 1000 personas. Acompaña a Meg en sus viajes mientras recoge las lágrimas de felicidad de todos aquellos con los que se cruza para conseguir la vida eterna.",
+    "imagen": "../img/onceupon.jpg",
+    "imagen_index": "img/onceupon.jpg",
+    "generos": ["drama", "fantasía"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/GMEHME72W/once-upon-a-witchs-death",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "martes"
+  },
+  {
+    "titulo": "The Shiunji Family Children",
+    "descripcion": "La familia Shiunji y sus siete hijos residen en una mansión del barrio tokiota de Setagaya. El hijo mayor, Arata, está cansado de que sus cinco hermanas le mangoneen y fantasea con la posibilidad de vivir lejos de ellas. Sin embargo, el padre de Arata les revela algo sorprendente: ¡Arata no tiene parentesco biológico con sus hermanas! Con este nuevo dato sobre la mesa, las relaciones entre los hermanos cambiarán completamente.",
+    "imagen": "../img/shiunji.jpg",
+    "imagen_index": "img/shiunji.jpg",
+    "generos": ["drama", "romance"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/G9VHN9Q84/the-shiunji-family-children",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "martes"
+  },
+  {
+    "titulo": "Apocalypse Hotel",
+    "descripcion": "Tras el colapso de la civilización, un hotel de varios pisos se yergue entre las ruinas del distrito Ginza de Tokio. Invadido por la naturaleza, este hotel solitario continúa desafiando el colapso de la humanidad. Huéspedes actuales: cero. Registros de hoy: cero. Tráfico de la web ayer: cero. Entra con cuidado en esta historia de supervivencia y misterios en un mundo en el que la memoria de la humanidad comienza a desvanecerse.",
+    "imagen": "../img/apocalypsehotel.jpg",
+    "imagen_index": "img/apocalypsehotel.jpg",
+    "generos": ["fantasía"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/GXJHM3G58/apocalypse-hotel",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "martes"
   }
 ]

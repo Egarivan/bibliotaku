@@ -29,7 +29,14 @@ body {
 .logo span {
   font-size: 1.5em;
   font-weight: bold;
+  color: #5ecdde;
 }
+
+.logo a {
+  text-decoration: none;
+}
+
+
 
 .main-nav a {
   color: #5ecdde;
@@ -219,3 +226,13 @@ body {
 .boton-donar:hover {
   background-color: #ff3c3c;
 }
+
+.tarjeta img {
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover img {
+  transform: scale(1.05);
+}
+
+
