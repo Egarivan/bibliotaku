@@ -215,7 +215,8 @@
     "destacado": true,
     "recomendado": false,
     "emision": true,
-    "fin_emision": "2025-05-30"
+    "fin_emision": "2025-05-30",
+    "dia_emision":"miercoles"
   },
   {
     "titulo": "Los Diarios de la Boticaria Temporada 2",
@@ -358,5 +359,43 @@
     "emision": true,
     "fin_emision": "2025-05-30",
     "dia_emision": "lunes"
+  },
+  {
+    "titulo": "Lycoris Recoil -Friends are thieves of time.--",
+    "descripcion": "Lycoris Recoil -Friends are thieves of time.-Las Lycoris protegen la paz, pero cuando una de ellas es 'retirada' injustamente de su sección y enviada a una peculiar cafetería a trabajar, se replanteará cuál es el trabajo que hacía.",
+    "imagen": "../img/lycoris.jpg",
+    "imagen_index": "img/lycoris.jpg",
+    "generos": ["acción", "comedia"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/G1XHJV2X9/lycoris-recoil",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "miercoles"
+  },
+  {
+    "titulo": "The Too-Perfect Saint: Tossed Aside by My Fiancé and Sold to Another Kingdom",
+    "descripcion": "Philia Adenauer es descendiente de una familia célebre en el reino de Girtonia por engendrar Santas a lo largo de muchas generaciones. Las Santas luchan para proteger a la humanidad de los monstruos, y Philia se sometió a una estricta formación y entrenamiento para hacerse merecedora de ese título. Cuando Julius, su prometido, rompe su compromiso, venden a Philia al reino de Parnacorta a cambio de recursos. ¿Sobrevivirá su patria sin ella?",
+    "imagen": "../img/tooperfect.jpg",
+    "imagen_index": "img/tooperfect.jpg",
+    "generos": ["acción"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/GP5HJ8477/the-too-perfect-saint-tossed-aside-by-my-fianc-and-sold-to-another-kingdom",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "miercoles"
+  },
+  {
+    "titulo": "The 100 Girlfriends Who Really, Really, Really, Really, REALLY Love You",
+    "descripcion": "The 100 Girlfriends Who Really, Really, Really, Really, REALLY Love You (Spanish Dub)A Rentaro Aijo lo rechazaron 100 veces hasta que terminó secundaria. Desesperado, visita un santuario para rezar por tener más suerte en su nueva fase en el instituto y poder conseguirse una novia. Es entonces cuando aparece ante él el Dios del Amor y le da una buena noticia: conocerá a su alma gemela en el instituto , ¡y no solo a una, sino a 100! Pero hay una trampa: si conoce a su alma gemela, deberán acabar juntos y amarse mutuamente, porque de lo contrario, ¡la chica morirá! ¿Qué hará Rentaro con sus 100 novias en el instituto ?",
+    "imagen": "../img/100girlfriends.jpg",
+    "imagen_index": "img/100girlfriends.jpg",
+    "generos": ["romance", "drama"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/GNVHKN933/the-100-girlfriends-who-really-really-really-really-really-love-you",
+    "destacado": false,
+    "recomendado": false,
+    "emision": false,
+    "fin_emision": "2025-05-30"
   }
 ]
