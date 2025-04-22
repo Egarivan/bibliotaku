@@ -177,7 +177,9 @@
     "destacado": false,
     "recomendado": true,
     "emision": true,
-    "fin_emision": "2025-05-30"
+    "fin_emision": "2025-05-30",
+    "dia_emision": "lunes"
+
   },
   {
     "titulo": "Black Butler -Emerald Witch Arc-",
@@ -249,7 +251,9 @@
     "destacado": true,
     "recomendado": false,
     "emision": true,
-    "fin_emision": "2025-05-30"
+    "fin_emision": "2025-05-30",
+    "dia_emision": "lunes"
+
   },
   {
     "titulo": "A Ninja and an Assassin Under One Roof",
@@ -328,5 +332,31 @@
     "emision": true,
     "fin_emision": "2025-05-30",
     "dia_emision": "martes"
+  },
+  {
+    "titulo": "Summer Pockets",
+    "descripcion": "Hairi Takahara jamás habría imaginado que el verano sería como un sueño. Cuando lo envían a Torishirojima para ordenar las pertenencias de su difunta abuela, descubre un mar infinito, una nostalgia silenciosa y unas chicas",
+    "imagen": "../img/summerpockets.jpg",
+    "imagen_index": "img/summerpockets.jpg",
+    "generos": ["drama"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/G0XHWM17X/summer-pockets",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "lunes"
+  },
+  {
+    "titulo": "ZatsuTabi -That's Journey-",
+    "descripcion": "Cuando rechazan los storyboards de Chika, una aspirante a dibujante de manga, ¡decide cambiar el escritorio por irse de aventuras! Con la ayuda de una singular encuesta en redes sociales, se embarca en un viaje espontáneo por destinos aleatorios. Chika encontrará la inspiración, la amistad y a sí misma en cada parada improvisada.",
+    "imagen": "../img/zatsutabi.jpg",
+    "imagen_index": "img/zatsutabi.jpg",
+    "generos": ["drama"],
+    "plataforma": "https://www.crunchyroll.com/es-es/series/GG5H5XQ85/zatsutabi--thats-journey-",
+    "destacado": true,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "lunes"
   }
 ]
