@@ -274,7 +274,8 @@
     "destacado": true,
     "recomendado": false,
     "emision": true,
-    "fin_emision": "2025-05-30"
+    "fin_emision": "2025-05-30",
+    "dia_emision": "lunes"
   },
   {
     "titulo": "Catch Me at the Ballpark",
