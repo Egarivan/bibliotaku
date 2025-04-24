@@ -96,12 +96,12 @@
     "fin_emision": "2025-04-30"
   },
   {
-    "titulo": "Demon Slayer",
-    "descripcion": "Tanjiro y Nezuko luchan contra demonios mientras buscan una cura para su hermana.",
-    "imagen": "../img/kimetsu.jpg",
-    "imagen_index": "img/kimetsu.jpg",
-    "generos": ["acción", "fantasía", "shounen"],
-    "plataforma": "https://www.crunchyroll.com/es/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba",
+    "titulo": "Attack on Titan",
+    "descripcion": "La humanidad lucha por sobrevivir contra gigantes devoradores de hombres.",
+    "imagen": "../img/attack-on-titan.jpg",
+    "imagen_index": "img/attack-on-titan.jpg",
+    "generos": ["acción", "fantasía", "drama"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GR751KNZY/attack-on-titan",
     "destacado": false,
     "recomendado": false,
     "emision": false,
@@ -204,7 +204,8 @@
     "destacado": false,
     "recomendado": true,
     "emision": true,
-    "fin_emision": "2025-05-30"
+    "fin_emision": "2025-05-30",
+    "dia_emision":"domingo"
   },
   {
     "titulo": "The Beginning After the End",
@@ -236,7 +237,7 @@
     "descripcion": "¡Azusa y su alegre banda regresan para más aventuras y misiones relajadas en un mundo de fantasía!",
     "imagen": "../img/azusa.jpg",
     "imagen_index": "img/azusa.jpg",
-    "generos": ["fantasía"],
+    "generos": ["fantasía", "Recuentos de la Vida"],
     "plataforma": "https://www.crunchyroll.com/es-es/series/GW4HM79VM/ive-been-killing-slimes-for-300-years-and-maxed-out-my-level",
     "destacado": false,
     "recomendado": false,
@@ -275,7 +276,7 @@
     "descripcion": "¡El peculiar vínculo entre Reina y Raidou se fortalece a medida que atraviesan más momentos incómodos, divertidos y conmovedores!",
     "imagen": "../img/aharen.jpg",
     "imagen_index": "img/aharen.jpg",
-    "generos": ["comedia", "romance"],
+    "generos": ["comedia", "romance", "Recuentos de la Vida"],
     "plataforma": "https://www.crunchyroll.com/es-es/series/GNVHKN72N/aharen-san-wa-hakarenai",
     "destacado": false,
     "recomendado": false,
@@ -353,7 +354,7 @@
     "descripcion": "Lycoris Recoil -Friends are thieves of time.-Las Lycoris protegen la paz, pero cuando una de ellas es 'retirada' injustamente de su sección y enviada a una peculiar cafetería a trabajar, se replanteará cuál es el trabajo que hacía.",
     "imagen": "../img/lycoris.jpg",
     "imagen_index": "img/lycoris.jpg",
-    "generos": ["acción", "comedia"],
+    "generos": ["acción", "comedia", "Recuentos de la Vida"],
     "plataforma": "https://www.crunchyroll.com/es-es/series/G1XHJV2X9/lycoris-recoil",
     "destacado": false,
     "recomendado": false,
@@ -496,7 +497,7 @@
   },
   {
     "titulo": "dr stone",
-    "descripcion": "Senku es un joven extremadamente inteligente con un gran don para la ciencia y una ácida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero más apto para usar los músculos que para pensar. Cuando tras cierto incidente toda la humanidad acaba convertida en piedra, ellos logran despertarse en un mundo miles de años después, con la civilización humana completamente desaparecida y con toda la humanidad congelada en piedra como ellos estuvieron. Ahora es su obligación rescatar a la gente y crear un nuevo mundo.",
+    "descripcion": "Senku es un joven extremadamente inteligente con un gran don para la ciencia y una ácida personalidad, y su mejor amigo es Taiju, que es muy buena persona pero más apto para usar los músculos que para pensar. Cuando tras cierto incidente toda la humanidad acaba convertida en piedra, ellos logran despertarse en un mundo miles de años después, con la civilización humana completamente desaparecida y con toda la humanidad congelada en piedra como ellos estuvieron.",
     "imagen": "../img/drstone.jpg",
     "imagen_index": "img/drstone.jpg",
     "generos": ["shounen", "drama", "acción", "comedia", "ciencia ficción", "aventura"],
@@ -559,7 +560,7 @@
     "descripcion": "Hastiado de su monótono trabajo, Murata encuentra refugio en un estadio de béisbol cercano. Aunque los partidos son emocionantes, lo que de verdad le interesa es Ruriko, una gal tan fría como la cerveza que sirve, pero con un corazón más tierno de lo que aparenta. Como su primer cliente habitual, Murata empieza a descubrir la dulzura oculta tras su actitud distante. Entre encuentros divertidos y conmovedores, el estadio se llena de momentos inolvidables… y quizás también de un nuevo sentimiento.",
     "imagen": "../img/catch-me-at-the-ballpark.jpg",
     "imagen_index": "img/catch-me-at-the-ballpark.jpg",
-    "generos": ["deportes", "comedia"],
+    "generos": ["deportes", "comedia", "Recuentos de la Vida"],
     "plataforma": "https://www.crunchyroll.com/es/series/GVDHX85EQ/catch-me-at-the-ballpark",
     "destacado": false,
     "recomendado": false,
@@ -572,7 +573,7 @@
     "descripcion": "Basada en el manga original de Haruichi Furudate, el cual se publica en la Weekly Shonen Jump, Haikyu!! ",
     "imagen": "../img/haikyu.jpg",
     "imagen_index": "img/haikyu.jpg",
-    "generos": ["shounen", "deportes"],
+    "generos": ["shounen", "deportes", "Recuentos de la Vida"],
     "plataforma": "https://www.crunchyroll.com/es/series/GY8VM8MWY/haikyu",
     "destacado": false,
     "recomendado": false,
@@ -608,7 +609,7 @@
     "descripcion": "El equipo de baloncesto de la preparatoria Teiko. La clase que produjo tres temporadas perfectas de un solo golpe, con cinco jugadores que solo se ven una vez en su generación, llamados La Generación Milagrosa",
     "imagen": "../img/kurokos-basketball.jpg",
     "imagen_index": "img/kurokos-basketball.jpg",
-    "generos": ["seinen", "drama", "acción"],
+    "generos": ["seinen", "acción", "deportes"],
     "plataforma": "https://www.crunchyroll.com/es/series/G62P48X56/kurokos-basketball",
     "destacado": false,
     "recomendado": false,
@@ -692,7 +693,153 @@
     "emision": true,
     "fin_emision": "2025-05-30",
     "dia_emision": "sabado"
+  },
+  {
+    "titulo": "The Gorilla God's Go-To Girl",
+    "descripcion": "La historia sigue a un grupo de chicas que trabajan en una tienda de conveniencia y su relación con un gorila que se convierte en su cliente habitual. A medida que las chicas interactúan con el gorila, descubren su personalidad única y desarrollan una amistad inesperada.",
+    "imagen": "../img/the-gorilla-gods-go-to-girl.jpg",
+    "imagen_index": "img/the-gorilla-gods-go-to-girl.jpg",
+    "generos": ["comedia", "drama","romance"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GJ0H7QG3M/the-gorilla-gods-go-to-girl",
+    "destacado": false,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "domingo"
+  },
+  {
+    "titulo": "Maebashi Witches",
+    "descripcion": "Bienvenidos a la ciudad de Maebashi, en la prefectura de Gunma. La vida de Yuina Akagi, estudiante de primer año de preparatoria, cambia por completo en el momento en que aparece una misteriosa rana llamada Keroppe y le pregunta: ¿Quieres ser una bruja?",
+    "imagen": "../img/maebashi-witches.jpg",
+    "imagen_index": "img/maebashi-witches.jpg",
+    "generos": ["música", "drama"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GW4HM7W1V/maebashi-witches",
+    "destacado": false,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "domingo"
+  },
+  {
+    "titulo": "SHIROHIYO - Reincarnated as a Neglected Noble: Raising My Baby Brother With Memories From My Past Life",
+    "descripcion": "Ageha Kikunoi es un niño mimado de 5 años que de pronto tiene recuerdos de una vida pasada. En aquel momento le encantaba cocinar, coser y cantar por encima de todo. En este mundo, Ageha y su hermano pequeño, Regulus, intentan abrirse camino en la casa Kikunoi mientras la corrupción en la aristocracia se hace más profunda. ¡Necesitarán las habilidades de la vida pasada de Ageha, las bendiciones de los dioses y los elfos y conjuros mágicos para ayudarles en su camino!",
+    "imagen": "../img/shirohiyo---reincarnated-as-a-neglected-noble-raising-my-baby-brother-with-memories-from-my-past-life.jpg",
+    "imagen_index": "img/shirohiyo---reincarnated-as-a-neglected-noble-raising-my-baby-brother-with-memories-from-my-past-life.jpg",
+    "generos": ["drama", "aventura"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GNVHKN9QW/shirohiyo---reincarnated-as-a-neglected-noble-raising-my-baby-brother-with-memories-from-my-past-life",
+    "destacado": false,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "domingo"
+  },
+  {
+    "titulo": "Bleach: Thousand-Year Blood War",
+    "descripcion": "Ichigo Kurosaki y los Soul Reapers enfrentan una nueva amenaza: los Quincy liderados por Yhwach. Una guerra definitiva por el destino de las almas.",
+    "imagen": "../img/Bleach.jpg",
+    "imagen_index": "img/Bleach.jpg",
+    "generos": ["acción", "shounen", "sobrenatural"],
+    "plataforma": "https://www.disneyplus.com/es-419/browse/entity-571475d5-8b1a-453f-a57f-26bb4dd13304"
+  },
+  {
+    "titulo": "Tokyo Revengers",
+    "descripcion": "Un joven viaja al pasado para salvar a su exnovia y cambiar su destino dentro de las pandillas callejeras de Tokio.",
+    "imagen": "../img/Tokyo-Revengers.jpg",
+    "imagen_index": "img/Tokyo-Revengers.jpg",
+    "generos": ["acción", "drama","aventura", "fantasía"],
+    "plataforma": "https://www.disneyplus.com/es-419/browse/entity-be391742-6617-42ad-b53a-be368ee73335?distributionPartner=google"
+  },
+  {
+    "titulo": "La isla de las sombras",
+    "descripcion": "Shinpei regresa a su ciudad natal para el funeral de su amiga, solo para verse atrapado en un bucle temporal que esconde una aterradora verdad.",
+    "imagen": "../img/La-isla-de-las-sombras.jpg",
+    "imagen_index": "img/La-isla-de-las-sombras.jpg",
+    "generos": ["fantasía", "sobrenatural"],
+    "plataforma": "https://www.disneyplus.com/es-419/browse/entity-ad803e91-b02a-42c9-a6f8-29f6468a74fd?distributionPartner=google"
+  },
+  {
+    "titulo": "Black Rock Shooter: Dawn Fall",
+    "descripcion": "Una heroína de aspecto oscuro lucha por la supervivencia en un mundo postapocalíptico gobernado por máquinas y caos.",
+    "imagen": "../img/Dawn-Fall.jpg",
+    "imagen_index": "img/Dawn-Fall.jpg",
+    "generos": ["ciencia ficción", "acción", "aventura"],
+    "plataforma": "https://www.disneyplus.com/es-co/browse/entity-9d2ab176-0b3c-476f-a989-0578876b018d"
+  },
+  {
+    "titulo": "Tatami Time Machine Blues",
+    "descripcion": "Una historia surrealista de bucles temporales, decisiones extrañas y una máquina del tiempo que cambia la vida universitaria.",
+    "imagen": "../img/Tatamitime.jpg",
+    "imagen_index": "img/Tatamitime.jpg",
+    "generos": ["comedia", "ciencia ficción", "Recuentos de la Vida", "romance"],
+    "plataforma": "https://www.disneyplus.com/es-419/browse/entity-3d5e7ac2-84b5-4682-9172-e56f70e9b0f5"
+  },
+  {
+    "titulo": "Parasyte: The Maxim",
+    "descripcion": "Parásitos alienígenas invaden el planeta y uno de ellos falla al tomar control completo de un humano, creando una convivencia forzada.",
+    "imagen": "../img/parasyte--the-maxim-.jpg",
+    "imagen_index": "img/parasyte--the-maxim-.jpg",
+    "generos": ["acción", "sobrenatural"],
+    "plataforma": "https://www.crunchyroll.com/es/series/G6K53VGGY/parasyte--the-maxim-"
+  },
+  {
+    "titulo": "The Fire Hunter",
+    "descripcion": "En un mundo postapocalíptico, un niño y una cazadora se enfrentan a bestias y misterios mientras revelan los secretos del fuego.",
+    "imagen": "../img/the-fire-hunter.jpg",
+    "imagen_index": "img/the-fire-hunter.jpg",
+    "generos": ["aventura", "fantasía", "drama"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GJ0H7Q5X9/the-fire-hunter"
+  },
+
+  {
+    "titulo": "Demon Slayer",
+    "descripcion": "Tanjiro Kamado se convierte en cazador de demonios después de que su familia es asesinada y su hermana convertida en demonio.",
+    "imagen": "../img/demon-slayer-kimetsu-no-yaiba.jpg",
+    "imagen_index": "img/demon-slayer-kimetsu-no-yaiba.jpg",
+    "generos": ["acción","shounen", "fantasía"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba"
+  },
+  {
+    "titulo": "Great Pretender",
+    "descripcion": "Un estafador japonés se ve envuelto en estafas internacionales junto a un misterioso ladrón francés.",
+    "imagen": "../img/Great-Pretender.jpg",
+    "imagen_index": "img/Great-Pretender.jpg",
+    "generos": ["comedia", "acción"],
+    "plataforma": "https://www.netflix.com/co/title/81220435?source=35"
+  },
+  {
+    "titulo": "Blue Period",
+    "descripcion": "Un estudiante descubre su pasión por el arte y decide ingresar a la universidad más prestigiosa de arte de Japón.",
+    "imagen": "../img/Blue-Period.jpg",
+    "imagen_index": "img/Blue-Period.jpg",
+    "generos": ["drama", "Recuentos de la Vida"],
+    "plataforma": "https://www.netflix.com/co/title/81318842"
+  },
+  {
+    "titulo": "Violet Evergarden",
+    "descripcion": "Una exsoldado busca encontrar su propósito como escritora de cartas mientras lidia con su pasado emocional.",
+    "imagen": "../img/Violet-Evergarden.jpg",
+    "imagen_index": "img/Violet-Evergarden.jpg",
+    "generos": ["drama", "fantasía", "Recuentos de la Vida"],
+    "plataforma": "https://www.netflix.com/co/title/80182123"
+  },
+  {
+    "titulo": "Beastars",
+    "descripcion": "En un mundo de animales antropomorfos, un lobo lucha contra sus instintos mientras se enamora de una coneja.",
+    "imagen": "../img/Beastars.jpg",
+    "imagen_index": "img/Beastars.jpg",
+    "generos": ["drama", "romance"],
+    "plataforma": "https://www.netflix.com/co/title/81054847"
+  },
+  {
+    "titulo": "Kengan Ashura",
+    "descripcion": "Empresarios resuelven disputas mediante combates a muerte entre luchadores en torneos clandestinos.",
+    "imagen": "../img/kengan-ashura.jpg",
+    "imagen_index": "img/kengan-ashura.jpg",
+    "generos": ["acción", "deportes"],
+    "plataforma": "https://www.netflix.com/co/title/80992228"
   }
+  
+  
   
   
 ]
