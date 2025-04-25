@@ -14,6 +14,36 @@
       color: black;
       font-weight: bold;
     }
+    .subnav {
+      position: relative;
+      display: inline-block;
+    }
+    .subnav-content {
+      display: none;
+      position: absolute;
+      background-color: #111;
+      padding: 10px;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      border: 1px solid #5ecdde;
+      border-radius: 8px;
+    }
+    .subnav-content a {
+      display: block;
+      padding: 6px 10px;
+      color: #5ecdde;
+      text-decoration: none;
+    }
+    .subnav-content a:hover {
+      color: white;
+    }
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+    .main-nav a {
+      margin: 0 15px;
+    }
   </style>
 </head>
 
@@ -22,7 +52,7 @@
   <!-- ENCABEZADO -->
   <header class="main-header">
     <div class="logo">
-      <a href="../index.html" style="text-decoration: none; color: inherit;">
+      <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
         <img src="../img/logo-bibliotaku.png" alt="Logo Bibliotaku" />
         <span>Bibliotaku</span>
       </a>
@@ -31,7 +61,10 @@
       <a href="../index.html">Inicio</a>
       <a href="en-emision.html">En emisión</a>
       <a href="emitidos-anteriormente.html">Emitidos</a>
-      <a href="generos.html">Géneros</a>
+      <div class="subnav">
+        <a href="#" style="color: #5ecdde; cursor: default; pointer-events: none;">Géneros</a>
+        <div class="subnav-content" id="subnav-generos"></div>
+      </div>
       <a href="donar.html">Donar</a>
     </nav>
   </header>
@@ -40,12 +73,6 @@
 
   <!-- CONTENIDO -->
   <main class="contenido contenido-limitado">
-    <h2>🎭 Filtrar por género</h2>
-
-    <!-- BOTONES DE GÉNERO -->
-    <div id="filtros-genero" class="filtros-genero" style="margin-bottom: 30px;"></div>
-
-    <!-- RESULTADO -->
     <div id="lista-generos" class="tarjeta-lista"></div>
   </main>
 
@@ -57,7 +84,6 @@
         <li><a href="sobre.html">¿Qué es Bibliotaku?</a></li>
         <li><a href="terminos.html">Términos y condiciones</a></li>
         <li><a href="privacidad.html">Política de privacidad</a></li>
-        <li><a href="donar.html">Donaciones</a></li>
       </ul>
     </div>
   </div>
@@ -77,16 +103,14 @@
         const generosExtras = ["deportes", "música", "shounen", "seinen"];
 
         animes.forEach(anime => anime.generos.forEach(g => generosUnicos.add(g)));
-        generosExtras.forEach(g => generosUnicos.add(g)); // Agregamos manualmente los nuevos
+        generosExtras.forEach(g => generosUnicos.add(g));
 
-        const filtros = document.getElementById("filtros-genero");
+        const subnav = document.getElementById("subnav-generos");
         const lista = document.getElementById("lista-generos");
 
-        function mostrar(genero, botonActual) {
+        function mostrar(genero) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
           lista.innerHTML = "";
-
-          document.querySelectorAll('.boton-genero').forEach(b => b.classList.remove('activo'));
-          if (botonActual) botonActual.classList.add('activo');
 
           const filtrados = animes.filter(anime => anime.generos.includes(genero));
 
@@ -111,13 +135,20 @@
         }
 
         generosUnicos.forEach(genero => {
-          const boton = document.createElement("button");
-          boton.textContent = genero.charAt(0).toUpperCase() + genero.slice(1);
-          boton.className = "boton-genero";
-          boton.onclick = () => mostrar(genero, boton);
-          filtros.appendChild(boton);
-        });
+          const enlace = document.createElement("a");
+          enlace.textContent = genero.charAt(0).toUpperCase() + genero.slice(1);
+          enlace.href = `#${genero}`;
+          enlace.onclick = (e) => {
+            e.preventDefault();
+            mostrar(genero);
+          };
+          subnav.appendChild(enlace);
 
+          const hash = decodeURIComponent(location.hash.replace('#', '')).toLowerCase();
+          if (genero.toLowerCase() === hash) {
+            setTimeout(() => mostrar(genero), 0);
+          }
+        });
       } catch (err) {
         console.error("Error cargando géneros:", err);
       }
@@ -126,6 +157,20 @@
     cargarGeneros();
   </script>
 
-</body>
+  <script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
 
+    window.addEventListener('scroll', function () {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScroll > lastScrollTop) {
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        header.style.transform = 'translateY(0)';
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  </script>
+
+</body>
 </html>

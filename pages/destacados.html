@@ -41,7 +41,6 @@
       <li><a href="sobre.html">¿Qué es Bibliotaku?</a></li>
       <li><a href="terminos.html">Términos y condiciones</a></li>
       <li><a href="privacidad.html">Política de privacidad</a></li>
-      <li><a href="donar.html">Donaciones</a></li>
     </ul>
   </div>
 </div>
@@ -82,6 +81,24 @@
 
     cargarAnimesDestacados();
   </script>
+
+<script>
+  let lastScrollTop = 0;
+  const header = document.querySelector('header');
+
+  window.addEventListener('scroll', function () {
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (currentScroll > lastScrollTop) {
+      // Deslizando hacia abajo
+      header.style.transform = 'translateY(-100%)';
+    } else {
+      // Deslizando hacia arriba
+      header.style.transform = 'translateY(0)';
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para evitar valores negativos
+  });
+</script>
 
 </body>
 </html>

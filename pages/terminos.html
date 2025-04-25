@@ -2,25 +2,66 @@
 <html lang="es">
 
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9481376393148516"
-    crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Términos y condiciones | Bibliotaku</title>
   <link rel="stylesheet" href="../style.css">
+  <style>
+    .subnav {
+      position: relative;
+      display: inline-block;
+    }
+
+    .subnav-content {
+      display: none;
+      position: absolute;
+      background-color: #111;
+      padding: 10px;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      border: 1px solid #5ecdde;
+      border-radius: 8px;
+    }
+
+    .subnav-content a {
+      display: block;
+      padding: 6px 10px;
+      color: #5ecdde;
+      text-decoration: none;
+    }
+
+    .subnav-content a:hover {
+      color: white;
+    }
+
+    .subnav:hover .subnav-content {
+      display: block;
+    }
+
+    .main-nav a {
+      margin: 0 15px;
+    }
+  </style>
 </head>
 
 <body>
   <header class="main-header">
     <div class="logo">
-      <img src="../img/logo-bibliotaku.png" alt="Logo Bibliotaku" />
-      <span>Bibliotaku</span>
+      <a href="../index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
+        <img src="../img/logo-bibliotaku.png" alt="Logo Bibliotaku" />
+        <span>Bibliotaku</span>
+      </a>
     </div>
     <nav class="main-nav">
       <a href="../index.html">Inicio</a>
       <a href="en-emision.html">En emisión</a>
       <a href="emitidos-anteriormente.html">Emitidos</a>
-      <a href="generos.html">Géneros</a>
+      <div class="subnav">
+        <a href="#" style="color: #5ecdde; cursor: default; pointer-events: none;">Géneros</a>
+        <div class="subnav-content" id="generos-dropdown"></div>
+      </div>
+      <a href="donar.html">Donar</a>
     </nav>
   </header>
 
@@ -28,14 +69,19 @@
 
   <main class="contenido contenido-limitado">
     <h2>Términos y condiciones</h2>
-    <p>Este sitio web es una biblioteca digital sin fines de lucro destinada a compartir información sobre animes en
-      emisión y emitidos anteriormente. Todo el contenido visual y descripciones son únicamente informativos y no se
-      almacena ni distribuye material con derechos reservados.</p>
-    <p>El uso del sitio implica la aceptación de que Bibliotaku no se responsabiliza por el contenido de sitios externos
-      vinculados.</p>
+    <p>Este sitio web es una biblioteca digital sin fines de lucro dedicada a compartir información sobre animes en emisión y animes emitidos anteriormente. Todo el contenido visual, imágenes, títulos, sinopsis y enlaces compartidos son de carácter informativo. Bibliotaku no almacena ni distribuye material con derechos reservados.</p>
+
+    <p>Al utilizar el sitio, aceptas los siguientes términos:</p>
+    <ul>
+      <li>No se permite el uso comercial del contenido mostrado.</li>
+      <li>Los enlaces a plataformas externas son responsabilidad de dichas plataformas, no de Bibliotaku.</li>
+      <li>Bibliotaku se reserva el derecho de modificar o eliminar contenido sin previo aviso.</li>
+      <li>No se recopila información personal del usuario a través de este sitio.</li>
+    </ul>
+
+    <p>Si tienes alguna duda sobre los términos aquí presentados, puedes contactarnos a través de nuestras redes sociales oficiales.</p>
   </main>
-  
-  <!-- INFORMACIÓN LEGAL -->
+
   <div class="info-legal">
     <div class="contenido-limitado">
       <h3 class="info-titulo">Bibliotaku</h3>
@@ -43,15 +89,52 @@
         <li><a href="sobre.html">¿Qué es Bibliotaku?</a></li>
         <li><a href="terminos.html">Términos y condiciones</a></li>
         <li><a href="privacidad.html">Política de privacidad</a></li>
-        <li><a href="donar.html">Donaciones</a></li>
       </ul>
     </div>
   </div>
 
-
   <footer>
     © 2025 Bibliotaku. Todos los derechos reservados.
   </footer>
+
+  <script>
+    async function cargarDropdownGeneros() {
+      try {
+        const res = await fetch('../data/animes.json');
+        const animes = await res.json();
+        const generosSet = new Set();
+        animes.forEach(anime => anime.generos.forEach(g => generosSet.add(g)));
+
+        const dropdown = document.getElementById('generos-dropdown');
+        generosSet.forEach(genero => {
+          const enlace = document.createElement('a');
+          enlace.href = `generos.html#${genero.toLowerCase()}`;
+          enlace.textContent = genero.charAt(0).toUpperCase() + genero.slice(1);
+          dropdown.appendChild(enlace);
+        });
+      } catch (err) {
+        console.error("Error al cargar géneros en el dropdown:", err);
+      }
+    }
+
+    cargarDropdownGeneros();
+  </script>
+
+  <script>
+    let lastScrollTop = 0;
+    const header = document.querySelector('header');
+
+    window.addEventListener('scroll', function () {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScroll > lastScrollTop) {
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        header.style.transform = 'translateY(0)';
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    });
+  </script>
 </body>
 
 </html>
