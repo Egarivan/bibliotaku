@@ -837,6 +837,19 @@
     "imagen_index": "img/kengan-ashura.jpg",
     "generos": ["acción", "deportes"],
     "plataforma": "https://www.netflix.com/co/title/80992228"
+  },
+  {
+    "titulo": "left hand layup",
+    "descripcion": "Xu Xing Ze es un apasionado fenómeno del baloncesto que aspira a ser el mejor de la historia. Sus sueños de jugar en el equipo campeón se ven truncados cuando su hermana lo inscribe accidentalmente en una universidad de menor prestigio con un nombre similar",
+    "imagen": "../img/left-hand-layup.jpg",
+    "imagen_index": "img/left-hand-layup.jpg",
+    "generos": ["deportes"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GKEH2G014/left-hand-layup",
+    "destacado": false,
+    "recomendado": false,
+    "emision": true,
+    "fin_emision": "2025-05-30",
+    "dia_emision": "miércoles"
   }
   
   
