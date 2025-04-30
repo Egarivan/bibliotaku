@@ -142,6 +142,8 @@
       try {
         const res = await fetch('data/animes.json');
         const animes = await res.json();
+        animes.sort((a, b) => a.titulo.localeCompare(b.titulo));
+
 
         const destacados = animes.filter(a => a.destacado);
         animesRecomendados = animes.filter(a => a.recomendado);

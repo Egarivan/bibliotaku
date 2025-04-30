@@ -99,6 +99,8 @@
       const animes = await res.json();
       const contenedor = document.getElementById('lista-emitidos');
       const hoy = new Date();
+      animes.sort((a, b) => a.titulo.localeCompare(b.titulo));
+
 
       const emitidos = animes.filter(anime => {
         if (!anime.emision) return true;
