@@ -949,6 +949,72 @@
     "destacado": false,
     "recomendado": false,
     "emision": false
+  },
+  {
+    "titulo": "Trillion game",
+    "descripcion": "Haru y Gaku, dos antiguos compañeros de clase, están dispuestos a hacer cualquier cosa para alcanzar el éxito. Y para ellos el éxito implica ganar un billón de dólares. Para conseguirlo, tendrán que sacar el máximo partido a sus habilidades personales",
+    "imagen": "../img/trillion-game.jpg",
+    "imagen_index": "img/trillion-game.jpg",
+    "generos": ["drama"],
+    "plataforma": "https://www.crunchyroll.com/es/series/G9VHN9Q7Q/trillion-game",
+    "destacado": false,
+    "recomendado": false,
+    "emision": false
+  },
+  {
+    "titulo": "Trillion game",
+    "descripcion": "Haru y Gaku, dos antiguos compañeros de clase, están dispuestos a hacer cualquier cosa para alcanzar el éxito. Y para ellos el éxito implica ganar un billón de dólares. Para conseguirlo, tendrán que sacar el máximo partido a sus habilidades personales",
+    "imagen": "../img/trillion-game.jpg",
+    "imagen_index": "img/trillion-game.jpg",
+    "generos": ["drama"],
+    "plataforma": "https://www.crunchyroll.com/es/series/G9VHN9Q7Q/trillion-game",
+    "destacado": false,
+    "recomendado": false,
+    "emision": false
+  },
+  {
+    "titulo": "Touken ranbu kai kyoden",
+    "descripcion": "En el año 2205 d. C., fuerzas del mal atacan el pasado, amenazando con alterar el curso de la historia. El juez convoca a cuatro espadachines, con espadas bendecidas por un sacerdote sintoísta, para proteger el pasado y salvar el futuro. Leales a su antiguo maestro, el rey demonio Oda Nobunaga, viajan de regreso al Templo Honnoji, donde fue asesinado. ¿Podrán detener el mal y preservar el pasado? Solo el tiempo lo dirá.",
+    "imagen": "../img/touken-ranbu-kai-kyoden.jpg",
+    "imagen_index": "img/touken-ranbu-kai-kyoden.jpg",
+    "generos": ["drama", "drama"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GVDHX85PN/touken-ranbu-kai-kyoden",
+    "destacado": false,
+    "recomendado": false,
+    "emision": false
+  },
+  {
+    "titulo": "Toilet bound hanako kun",
+    "descripcion": "Yashiro Nene busca ayuda fantasmal con su vida amorosa, pero cuando Hanako-san, el espíritu que concede deseos que acecha en el baño de las niñas, resulta ser un niño, puede terminar recibiendo más o menos de lo que esperaba.",
+    "imagen": "../img/toilet-bound-hanako-kun.jpg",
+    "imagen_index": "img/toilet-bound-hanako-kun.jpg",
+    "generos": ["comedia", "fantasía"],
+    "plataforma": "https://www.crunchyroll.com/es/series/G24H1N3ZP/toilet-bound-hanako-kun",
+    "destacado": false,
+    "recomendado": false,
+    "emision": false
+  },
+  {
+    "titulo": "The unaware atelier meister",
+    "descripcion": "Kurt Rockhans es un bondadoso chico de los recados del grupo de héroes, el Colmillo de Dragón Llameante. Un día, es desterrado del grupo y descubre que tiene el rango más bajo en combate. Para ganarse la vida, Kurt acepta diversos trabajos y descubre que posee habilidades asombrosas. Aunque aún no lo sabe, Kurt posee habilidades de rango SSS en todo menos en la lucha, y se embarca en una nueva aventura.",
+    "imagen": "../img/the-unaware-atelier-meister.jpg",
+    "imagen_index": "img/the-unaware-atelier-meister.jpg",
+    "generos": ["fantasía"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GKEH2G0J4/the-unaware-atelier-meister",
+    "destacado": false,
+    "recomendado": false,
+    "emision": false
+  },
+  {
+    "titulo": "the daily life of a middle aged online shopper in another world",
+    "descripcion": "Kenichi Hamada es un hombre cualquiera de mediana edad que trabaja como ilustrador en Japón. Un día es transportado a otro mundo y, al despertar, se encuentra en un peligroso bosque repleto de monstruos feroces. No tarda en descubrir una enorme tienda online que puede proporcionarle justo lo que necesita. Únete a Kenichi en su búsqueda de tranquilidad en un mundo nuevo.",
+    "imagen": "../img/the-daily-life-of-a-middle-aged-online-shopper-in-another-world.jpg",
+    "imagen_index": "img/the-daily-life-of-a-middle-aged-online-shopper-in-another-world.jpg",
+    "generos": ["comedia", "fantasía"],
+    "plataforma": "https://www.crunchyroll.com/es/series/GVDHX855Q/the-daily-life-of-a-middle-aged-online-shopper-in-another-world",
+    "destacado": false,
+    "recomendado": false,
+    "emision": false
   }
   
   
